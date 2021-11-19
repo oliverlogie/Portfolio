@@ -1,0 +1,23 @@
+/* ==========================================================================
+   ModuleBreadcrumb
+   ========================================================================== */
+
+.mod_breadcrumb {
+  color: @color-grey;
+  font-size: 0.85rem;
+  margin: 15px 0px;
+  text-transform: uppercase;
+
+  a {
+    padding: 0 3px;
+    color: @color-grey;
+
+    &:hover, &:focus, &.bc_current {
+      color: @main-color;
+    }
+  }
+}
+
+.ct-0 .mod_breadcrumb {
+  .hidden;
+}

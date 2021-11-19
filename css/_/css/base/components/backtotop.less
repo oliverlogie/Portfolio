@@ -1,0 +1,48 @@
+/**
+ * backtotop.less
+ *
+ * Author: Q2E GmbH
+ * Copyright: (c) 2018 Q2E GmbH office@q2e.at
+ */
+
+/* ==========================================================================
+   Back to Top - Button
+   ========================================================================== */
+
+.back-top {
+  position: fixed;
+  bottom: 15px;
+  margin-left: 0px;
+  left: 16px;
+  text-align:center;
+  z-index:1000;
+
+  a {
+    .transition(all 0.3s);
+    width: 75px;
+    display: block;
+    text-align: center;
+    font: 12px/100% Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #666666;
+
+    i {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 2.1rem;
+    }
+
+    &:hover {
+      color: #000;
+
+      span {
+        background-color: #666;
+      }
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .hidden;
+  }
+}

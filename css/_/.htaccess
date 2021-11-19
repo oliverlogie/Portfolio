@@ -1,0 +1,157 @@
+# ------------------------------------------------------------------------------
+# Directory listing
+# ------------------------------------------------------------------------------
+
+# Block access to directories without a default document.
+# Usually you should leave this uncommented because you shouldn't allow anyone
+# to surf through every directory on your server (which may includes rather
+# private places like the CMS's directories).
+
+<IfModule mod_autoindex.c>
+    Options -Indexes
+</IfModule>
+
+# ------------------------------------------------------------------------------
+# CACHING
+# Expires headers (for better cache control)
+# ------------------------------------------------------------------------------
+
+# access plus 0 seconds : for dynamic content such as html, xml, json
+# access plus 1 week    : for favicon ( cannot be renamed )
+# access plus 1 month   : for ressources with unique name, such as CMS images, where
+#                         the filename is changed when uploading a new one
+# access plus 1 year    : for js and css ressources which are included using a
+#                         GET parameter timestamp, that is updated each time we
+#                         change the content
+
+<IfModule mod_expires.c>
+
+    ExpiresActive on
+    ExpiresDefault                                      "access plus 1 week"
+
+  # CSS
+    ExpiresByType text/css                              "access plus 1 year"
+
+  # Data interchange
+    ExpiresByType application/json                      "access plus 0 seconds"
+    ExpiresByType application/xml                       "access plus 0 seconds"
+    ExpiresByType text/xml                              "access plus 0 seconds"
+
+  # Favicon (cannot be renamed!)
+    ExpiresByType image/x-icon                          "access plus 1 week"
+
+  # HTML
+    ExpiresByType text/html                             "access plus 0 seconds"
+
+  # JavaScript
+    ExpiresByType application/javascript                "access plus 1 year"
+    ExpiresByType text/javascript                       "access plus 1 year"
+
+  # Manifest files
+    ExpiresByType application/x-web-app-manifest+json   "access plus 0 seconds"
+    ExpiresByType text/cache-manifest                   "access plus 0 seconds"
+
+  # Media
+    ExpiresByType audio/ogg                             "access plus 1 month"
+    ExpiresByType image/gif                             "access plus 1 month"
+    ExpiresByType image/jpeg                            "access plus 1 month"
+    ExpiresByType image/png                             "access plus 1 month"
+    ExpiresByType video/mp4                             "access plus 1 month"
+    ExpiresByType video/ogg                             "access plus 1 month"
+    ExpiresByType video/webm                            "access plus 1 month"
+
+  # Web feeds
+    ExpiresByType application/atom+xml                  "access plus 1 hour"
+    ExpiresByType application/rss+xml                   "access plus 1 hour"
+
+  # Web fonts
+    ExpiresByType application/font-woff                 "access plus 1 month"
+    ExpiresByType application/vnd.ms-fontobject         "access plus 1 month"
+    ExpiresByType application/x-font-ttf                "access plus 1 month"
+    ExpiresByType font/opentype                         "access plus 1 month"
+    ExpiresByType image/svg+xml                         "access plus 1 month"
+
+</IfModule>
+
+# ------------------------------------------------------------------------------
+# GZIP COMPRESSION
+# ------------------------------------------------------------------------------
+
+<IfModule mod_deflate.c>
+    # these are known to be safe with MSIE 6
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml
+
+    # everything else may cause problems with MSIE 6
+    AddOutputFilterByType DEFLATE text/css
+    AddOutputFilterByType DEFLATE application/x-javascript application/javascript application/ecmascript text/javascript text/x-js
+    AddOutputFilterByType DEFLATE application/rss+xml
+</IfModule>
+
+# ------------------------------------------------------------------------------
+# REWRITE RULES
+# ------------------------------------------------------------------------------
+
+RewriteEngine on
+# RewriteBase /
+
+# Remove trailing slash from directory paths for SEO
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{THE_REQUEST} \s/+(.+?)/+[?\s]
+RewriteRule /$ /%1 [L,R=301]
+
+# Force "www" domain
+# RewriteCond %{HTTP_HOST} !^dev\.q2e\.at [NC]
+# RewriteCond %{HTTP_HOST} !^localhost [NC]
+# RewriteCond %{HTTP_HOST} !^www\.
+# RewriteRule ^(.*)$ https://www.%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+
+# Rewrite to HTTP
+# RewriteCond %{HTTPS} on
+# RewriteRule ^(.*)$ http://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# Rewrite to HTTPS
+# RewriteCond %{HTTPS} off
+# RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# handle requests to robots.txt
+RewriteRule ^robots.txt$ robots.php [L]
+RewriteRule ^robots.php$ - [L]
+
+# handle requests to sitemap.xml
+RewriteRule ^sitemap.xml$ sitemap.php [L]
+RewriteRule ^sitemap.php$ - [L]
+
+# prevent further rewriting of (already rewritten) requests to index.php
+RewriteRule ^index.php$ - [L]
+
+# prevent rewriting requests to the backend
+RewriteRule ^edwin$ edwin/ [L]
+RewriteRule ^edwin/ -      [L]
+
+# adaptive-images
+RewriteCond %{REQUEST_URI} !pix
+RewriteCond %{REQUEST_URI} !files
+RewriteCond %{REQUEST_URI} !ai-cache
+RewriteRule \.(?:jpe?g|gif|png)$ adaptive-images.php [L]
+RewriteRule ^adaptive-images.php$ - [L]
+
+# prevent rewriting requests to directories which should be directly
+# accessible by the client (user-generated or template specific content)
+RewriteRule ^img/|^pix/|^css/|^prog/ - [L]
+RewriteRule ^tps/_mobile/|^tps/css/|^tps/images/|^tps/js/|^tps/fonts/ - [L]
+
+# prevent rewriting requests to arbitrary existing HTM(L), CSS, JS and TXT files
+RewriteRule \.html?$ - [L]
+RewriteRule \.css$   - [L]
+RewriteRule \.js$    - [L]
+RewriteRule \.txt$   - [L]
+
+# prevent rewriting requests to special ressources
+RewriteRule ^favicon.ico$ - [L]
+
+# prevent rewriting requests to project specific directories (which have to
+# co-exist with the CMS installation)
+# RewriteRule ^directory/ - [L]
+
+# rewrite frontend requests to index.php
+RewriteRule ^(.+)$ index.php?page=$1&%{QUERY_STRING}

@@ -1,0 +1,42 @@
+/**
+ * content.less
+ *
+ * Author: Q2E GmbH
+ * Copyright: (c) 2018 Q2E GmbH office@q2e.at
+ */
+
+
+/* ==========================================================================
+   Content Bereich
+   ========================================================================== */
+
+.sidebar-right {
+  position: relative;
+
+  @media @md-down {
+    max-width: 330px;
+    margin: 0 auto;
+  }
+}
+
+/* Anpassungen für Startseite
+   -------------------------------------------------------------------------- */
+.ct-0 {
+
+  // Sidebar
+  .sidebar-right {
+    .hidden;
+  }
+
+  // Container über ganze Breite
+  .content-container {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+
+  // keine 2. Navigationsebene
+  .f-nav {
+    .hidden;
+  }
+
+}

@@ -1,0 +1,121 @@
+/**
+ * sitemapnavmobile.less
+ *
+ * Author: Q2E GmbH
+ * Copyright: (c) 2018 Q2E GmbH office@q2e.at
+ */
+
+/* ==========================================================================
+   Navigation - MOBILE (ModuleSitemapnavmainmobile)
+   ========================================================================== */
+
+.navbar {
+  padding: 0px;
+}
+
+.c-mnav {
+  font-size: 1.1rem;
+  font-weight: @bold;
+  line-height: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+
+  // level 0
+  &__list-level0 {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__list-level0-link {
+    border-bottom: solid 1px @color-grey;
+    color: @menu-font-color;
+    background-color: @menu-level0-bgcolor;
+    padding: 8px 15px;
+    display: inline-block;
+    width: 100%;
+
+    &:focus {
+      outline: 0;
+      border: dotted 2px @menu-font-color;
+      color: @menu-font-color;
+    }
+
+    &.is-active {
+      background-color: @menu-bg-color-active;
+      color: @menu-font-color-active;
+
+      &:focus {
+        outline: 0;
+        border: dotted 2px #fff;
+      }
+    }
+  }
+
+  // level 1
+  &__list-level1 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+  &__list-level1-link {
+    border-bottom: solid 1px @color-grey;
+    color: @menu-font-color;
+    background-color: @menu-level1-bgcolor;
+    padding: 8px 15px 8px 30px;
+    display: inline-block;
+    width: 100%;
+    font-weight: normal;
+    line-height: 1.1;
+
+    &:focus {
+      outline: 0;
+      border: dotted 2px @menu-font-color;
+      color: @menu-font-color;
+    }
+
+    &.is-active {
+      background-color: @menu-bg-color-active;
+      color: @menu-font-color-active;
+
+      &:focus {
+        outline: 0;
+        border: dotted 2px #fff;
+      }
+    }
+  }
+
+  // level 2
+  &__list-level2 {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+
+  &__list-level2-link {
+    border-bottom: solid 1px @color-grey;
+    color: @menu-font-color;
+    background-color: @menu-level2-bgcolor;
+    padding: 6px 15px 6px 50px;
+    display: inline-block;
+    width: 100%;
+    font-weight: normal;
+    font-size: 1rem;
+
+    &:focus {
+      outline: 0;
+      border: dotted 2px @menu-font-color;
+      color: @menu-font-color;
+    }
+
+    &.is-active {
+      background-color: @menu-bg-color-active;
+      color: @menu-font-color-active;
+
+      &:focus {
+        outline: 0;
+        border: dotted 2px #fff;
+      }
+    }
+  }
+}

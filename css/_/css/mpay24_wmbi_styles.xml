@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+
+This file is used by includes/classes/CmsMPay24Shop.php for styling the WMBI
+shopping cart.
+
+IMPORTANT: Do not change xml element structure!!
+
+Insert css styles to style elements, whereas the actual shopping cart html part
+styled is defined within the name attribute. For using background images, the
+mpay24 support team has to upload files ( support@mPAY24.com do not forget the
+merchant id within subject )
+
+Special handling for items. You can style odd and even rows only. There is no
+possibility for styling single rows.
+
+Example:
+...
+<ItemEven>
+            <Number>
+                <style name="Style">color:#FF0000</style>
+            </Number>
+            ...
+</ItemEven>
+
+...will colorize all item numbers of even item rows.
+
+-->
+<Order>
+    <style name="LogoStyle"></style>
+    <style name="PageHeaderStyle"></style>
+    <style name="PageCaptionStyle"></style>
+    <style name="PageStyle"></style>
+    <style name="FooterStyle"></style>
+    <style name="Style"></style>
+    <style name="InputFieldsStyle"></style>
+    <style name="DropDownListsStyle"></style>
+    <style name="ButtonsStyle"></style>
+    <style name="ErrorsStyle"></style>
+    <style name="ErrorTitleStyle"></style>
+    <style name="SuccessTitleStyle"></style>
+    <Price>
+      <style name="Header"></style>
+      <style name="HeaderStyle"></style>
+      <style name="Style"></style>
+    </Price>
+    <ShoppingCart>
+        <style name="Style"></style>
+        <style name="Header"></style>
+        <style name="HeaderStyle"></style>
+        <style name="CaptionStyle"></style>
+        <style name="NumberHeader"></style>
+        <style name="NumberStyle"></style>
+        <style name="ProductNrHeader"></style>
+        <style name="ProductNrStyle"></style>
+        <style name="DescriptionHeader"></style>
+        <style name="DescriptionStyle"></style>
+        <style name="PackageHeader"></style>
+        <style name="PackageStyle"></style>
+        <style name="QuantityHeader"></style>
+        <style name="QuantityStyle"></style>
+        <style name="ItemPriceHeader"></style>
+        <style name="ItemPriceStyle"></style>
+        <style name="PriceHeader"></style>
+        <style name="PriceStyle"></style>
+        <ItemEven>
+            <Number>
+                <style name="Style"></style>
+            </Number>
+            <ProductNr>
+                <style name="Style"></style>
+            </ProductNr>
+            <Description>
+                <style name="Style"></style>
+            </Description>
+            <Package>
+                <style name="Style"></style>
+            </Package>
+            <Quantity>
+                <style name="Style"></style>
+            </Quantity>
+            <ItemPrice>
+                <style name="Style"></style>
+            </ItemPrice>
+            <Price>
+                <style name="Style"></style>
+            </Price>
+        </ItemEven>
+        <ItemOdd>
+            <Number>
+                <style name="Style"></style>
+            </Number>
+            <ProductNr>
+                <style name="Style"></style>
+            </ProductNr>
+            <Description>
+                <style name="Style"></style>
+            </Description>
+            <Package>
+                <style name="Style"></style>
+            </Package>
+            <Quantity>
+                <style name="Style"></style>
+            </Quantity>
+            <ItemPrice>
+                <style name="Style"></style>
+            </ItemPrice>
+            <Price>
+                <style name="Style"></style>
+            </Price>
+        </ItemOdd>
+        <Discount>
+          <style name="Header"></style>
+          <style name="HeaderStyle"></style>
+          <style name="Style"></style>
+        </Discount>
+        <ShippingCosts>
+          <style name="Header"></style>
+          <style name="HeaderStyle"></style>
+          <style name="Style"></style>
+        </ShippingCosts>
+        <SubTotal>
+          <style name="Header"></style>
+          <style name="HeaderStyle"></style>
+          <style name="Style"></style>
+        </SubTotal>
+        <Tax>
+          <style name="Header"></style>
+          <style name="HeaderStyle"></style>
+          <style name="Style"></style>
+        </Tax>
+    </ShoppingCart>
+</Order>

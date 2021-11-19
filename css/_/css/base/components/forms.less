@@ -1,0 +1,82 @@
+/**
+ * form.less
+ *
+ * Author: Q2E GmbH
+ * Copyright: (c) 2018 Q2E GmbH office@q2e.at
+ */
+
+ /* ========================================================================== */
+/* Formularfelder
+/* ========================================================================== */
+
+select,
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=tel],
+input[type=url],
+input[type=date],
+input[type=search],
+textarea {
+  .border-radius(0px);
+  .box-sizing(border-box);
+  border: 1px solid @form-border-color;
+  padding: 9px 4px 8px;
+  font-size: 0.9rem;
+  color: @body-color;
+  margin-bottom: 10px;
+
+  &:hover, &:focus {
+    background: @form-bg-hover;
+  }
+
+  &:focus {
+    outline: 0;
+    border: dashed 1px @body-color;
+  }
+}
+
+select {
+  height: 35px;
+}
+
+label {
+  font-weight: @semi-bold;
+}
+
+abbr[title] {
+  border: 0;
+  text-decoration: none;
+}
+
+.td-1 {
+  width: 100%;
+
+  input[type="text"], input[type="password"], input[type="email"], input[type="tel"], input[type="date"], textarea {
+    width: 95.5%;
+  }
+}
+
+.td-2 {
+  width: 50%;
+
+  input[type="text"], input[type="password"], input[type="email"], input[type="tel"], input[type="date"] {
+    width: 91%;
+  }
+
+  select {
+    width: 95.5%;
+  }
+}
+
+.td-3 {
+  width: 33.3%;
+
+  input[type="text"], input[type="password"], input[type="email"], input[type="tel"], input[type="date"] {
+    width: 87%;
+  }
+
+  select {
+    width: 93%;
+  }
+}

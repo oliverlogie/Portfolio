@@ -1,0 +1,116 @@
+/* ========================================================================== */
+/* ModuleSiteIndexCompendium
+/* ========================================================================== */
+
+// SI AREA 1
+.swiper-container {
+
+  .swiper-slide {
+    display: inline-block;
+    justify-content: unset;
+
+    &__link, &__img {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+
+  .slide-content {
+    .z-gradient-transparent();
+    position: absolute;
+    height: 100%;
+    text-align: right;
+    display: flex;
+    justify-content: center;
+    max-width: 45%;
+    color: #fff;
+    top: 0px;
+    right: 0px;
+
+    @media @xl-down {
+      max-width: 45%;
+    }
+
+    @media @lg-down {
+      max-width: 55%;
+    }
+
+    @media @md-down {
+      max-width: 60%;
+    }
+  }
+
+  .slide-content-inner {
+    align-self: flex-end;
+    padding: 0px 100px 120px 60px;
+    font-size: 1.5rem;
+
+    @media @xl-down {
+      padding: 0px 60px 80px 60px;
+      font-size: 1.3rem;
+    }
+
+    @media @lg-down {
+      padding: 0px 60px 30px 0px;
+      font-size: 1.2rem;
+
+      .slide-content-inner__headline {
+        font-size: 2.6rem;
+        line-height: 1.2;
+      }
+    }
+
+    @media @md-down {
+      padding: 0px 50px 30px 0px;
+      font-size: 0.85rem;
+      line-height: 1.05;
+
+      .slide-content-inner__headline {
+        font-size: 1.2rem;
+        line-height: 1;
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+}
+
+// SI AREAs
+.si-area {
+  margin: 20px 0 40px;
+}
+
+.si-area-main {
+  text-align: center;
+  margin-bottom: 40px;
+
+  &__text {
+    font-size: 1.2rem;
+    width: 70%;
+    margin: 0 auto;
+
+    @media @md-down {
+      width: 100%;
+    }
+  }
+}
+
+.si-area-box {
+  margin-bottom: 20px;
+
+  &__text {
+    margin: 10px 0px 15px;
+  }
+
+  @media @md-down {
+    margin: 0 auto 20px;
+    max-width: 370px;
+  }
+}
+
+// SI AREA 3
+.si-area3 {
+  margin-bottom: 0px;
+  padding: 50px 0px;
+  background-color: @color-grey-light;
+}

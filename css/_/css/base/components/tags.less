@@ -1,0 +1,49 @@
+/**
+ * tags.less
+ *
+ * Author: Q2E GmbH
+ * Copyright: (c) 2019 Q2E GmbH office@q2e.at
+ */
+
+/* ==========================================================================
+  Tag Filter Navigation
+  ========================================================================== */
+
+.c-tag-filter {
+  padding: 10px 0px;
+
+  &__list {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+  }
+
+  &__list-group {
+    padding: 15px 0px;
+
+    ul {
+      padding: 0px;
+      margin: 0px;
+    }
+  }
+
+  &__list-item {
+    float: left;
+    list-style: none;
+    margin-right: 15px;
+
+    padding: 2px 10px;
+    border: solid 1px @main-color;
+    font-weight: @semi-bold;
+    color: @main-color;
+
+    &:hover, &--selected {
+      background-color: @main-color;
+      color: #fff;
+    }
+
+    a {
+      color: inherit;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+/* ==========================================================================
+   ModuleMobileButtons
+   ========================================================================== */
+
+.si-mobile-buttons {
+  padding: 0px 15px 0px 0px;
+  z-index: 1001;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-bottom: 15px;
+
+  &__icon {
+    width: auto;
+    margin-left: 3.8%;
+    margin-top: -2px;
+  }
+
+  &__btn {
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    padding: 5px 0px;
+  }
+
+  &__link {
+    display: block;
+    height: 25px;
+    padding: 0px 15px;
+    display: inline-block;
+    color: #fff !important;
+    text-align: center;
+    cursor: pointer;
+  }
+}
+
+.innercontent {
+  .si-mobile-buttons {
+    .hidden;
+  }
+}
+
+// .f-head__text {
+//   .hidden;
+// }

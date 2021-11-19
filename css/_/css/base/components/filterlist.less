@@ -1,0 +1,54 @@
+/**
+ * filterlist.less
+ *
+ * used on: TG filter
+ *
+ * Author: Q2E GmbH
+ * Copyright: (c) 2019 Q2E GmbH office@q2e.at
+ */
+
+/* ==========================================================================
+   Filter List
+   ========================================================================== */
+
+.c-filter-list {
+  &__ul {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    margin: 0 0 1em 0;
+    padding: 0;
+  }
+
+  &__item {
+    display: block;
+
+    &.active {
+      color: @main-color;
+    }
+  }
+
+  &__group-headline {
+    font-weight: @bold;
+    text-transform: uppercase;
+  }
+
+  &__tag-icon {
+    &:after {
+      content: '\f02b';
+      font-family: FontAwesome;
+      font-size: 0.8em;
+    }
+  }
+
+  &--horizontal {
+    .c-filter-list__ul {
+      width: auto;
+      margin: 0 0 1em 1em;
+
+      &:nth-child(1) {
+        margin-left: 0;
+      }
+    }
+  }
+}

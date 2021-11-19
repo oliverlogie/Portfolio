@@ -1,0 +1,59 @@
+/**
+ * buttons.less
+ *
+ * Author: Q2E GmbH
+ * Copyright: (c) 2018 Q2E GmbH office@q2e.at
+ */
+
+ /* ==========================================================================
+   Buttons
+   ========================================================================== */
+
+.c-btn {
+  .border-radius(1px);
+  background-color: @main-color;
+  border: 1px solid @main-color;
+  padding: 8px 30px;
+  color: #fff;
+  font-size: 1.2rem;
+
+  &:hover, &:focus {
+    background-color: @link-color-hover;
+    border-color: @link-color-hover;
+    cursor: pointer;
+  }
+
+  &:focus {
+    outline: 0;
+    border: dashed 1px @body-color;
+  }
+
+  @media @lg-down {
+    padding: 8px 10px;
+  }
+}
+
+a.c-btn {
+  color: #fff;
+}
+
+.c-btn--grey {
+  .c-btn;
+  background-color: @color-grey;
+  border: 1px solid @color-grey;
+}
+
+.c-btn--small {
+  padding: 5px 10px;
+  font-size: 1rem;
+}
+
+.c-btn--smaller {
+  padding: 4px 7px;
+  font-size: 0.9rem !important;
+}
+
+.c-btn--full-right {
+  width: 100%;
+  text-align: right;
+}

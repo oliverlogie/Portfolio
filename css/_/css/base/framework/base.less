@@ -1,0 +1,262 @@
+/**
+ * base.less
+ *
+ * Author: Q2E GmbH
+ * Copyright: (c) 2018 Q2E GmbH office@q2e.at
+
+ * Allgemeine Content-Styles
+    - Überschriften
+    - Links
+    - Content Text Lists
+    - Formatvorlagen für TinyMCE
+  * Allgemeine Klassen fürs Framework
+  * Kundenspezifische Klassen
+    - Schriften
+    - Text-Highlights
+ */
+
+ /* ==========================================================================
+   Framework - Allgemeine Content-Styles
+   ========================================================================== */
+
+html {
+  font-size: 16px;
+  font-size: @body-font-size;
+  line-height: 1.5; // Unitless to avoid problems with different units.
+}
+
+body {
+  color: @body-color;
+  background-color: @background-color;
+  font-family: @main-font;
+  font-weight: 400;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+i {
+  margin-right: 5px;
+}
+
+.small-gutters {
+  margin-right: -6px;
+  margin-left: -6px;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 6px;
+    padding-left: 6px;
+  }
+}
+
+/* Überschriften
+   -------------------------------------------------------------------------- */
+
+.headline--1 {
+  font-family: @header-font;
+  color: @main-color;
+  font-weight: @semi-bold;
+  font-size: 2.5rem;
+  line-height: 1.2; // Unitless to avoid problems with different units.
+  margin: 0rem 0 0.5rem 0;
+
+  @media @md-down {
+    font-size: 2rem;
+  }
+}
+
+.headline--2 {
+  font-family: @header-font;
+  color: @main-color;
+  font-weight: @semi-bold;
+  font-size: 1.7rem;
+  line-height: 1.2; // Unitless to avoid problems with different units.
+  margin: 1rem 0 0.4rem 0;
+}
+
+.headline--3 {
+  font-family: @header-font;
+  color: @main-color;
+  font-size: 1.3rem;
+  font-weight: @semi-bold;
+  line-height: 1.2; // Unitless to avoid problems with different units.
+  margin: 1rem 0 0.35rem;
+}
+
+.headline--4 {
+  font-family: @header-font;
+  color: @main-color;
+  font-size: 1.1rem;
+  font-weight: @semi-bold;
+  line-height: 1.2; // Unitless to avoid problems with different units.
+  margin: 1rem 0 0.3rem;
+}
+
+.headline--white {
+  color: #fff;
+}
+
+
+/* Sonstige Schriftendefinitionen
+   -------------------------------------------------------------------------- */
+
+/*
+.z-font-special() {
+  font-family: @header-font;
+  font-size: 1.2rem;
+  letter-spacing: 0.3px;
+}
+
+.z-font-bold() {
+  font-family: @main-font;
+  font-weight: 700;
+}
+*/
+
+
+/* Links
+   -------------------------------------------------------------------------- */
+
+a {
+  color: @link-color;
+  text-decoration: none;
+
+  &, &:visited {
+    color: inherit;
+  }
+
+  &:hover, &:focus {
+    text-decoration: none;
+    color: @link-color-hover;
+  }
+}
+
+.more-link {
+  color: @link-color;
+  display: block;
+  margin-left: 0px;
+  padding-left: 0px;
+  margin-top: 7px;
+  font-weight: @bold;
+
+  &:hover {
+    color: @link-color-hover;
+  }
+}
+
+a[href^=tel],
+a.nlink3i,  // Internal, File
+a.nlink3f,  // File
+a.nlink3,  // Mail
+a.nlink5,  // Mail
+a.nlink3a { // Anchor
+  color: @link-color;
+
+  &:visited {
+    color: @link-color;
+  }
+
+  &:hover {
+    color: @link-color-hover;
+  }
+
+  &:focus {
+    outline: 0;
+    border: dashed 1px @body-color;
+  }
+}
+
+/* Content Text Lists
+   -------------------------------------------------------------------------- */
+
+.content-container {
+  ul.editor-list {
+    list-style: none;
+    margin: 1rem 0;
+    padding: 0 0 0 1rem;
+    color: @body-color;
+
+    li {
+      padding-left: 1rem;
+      text-indent: -1.0rem;
+
+      ul {
+        margin: 0.2rem 0;
+
+        li {
+          text-indent: -1.1rem;
+        }
+
+        li:before {
+          content: "\0009F9"; // Circle, border only.
+          font-size: 1.2rem;
+          font-weight: 400;
+          line-height: 1rem;
+        }
+      }
+    }
+
+    li:before {
+      font-weight: 900;
+      content: "\002022"; // Full circle (disc).
+      color: @main-color;
+      padding-right: 7px;
+      text-shadow: 0px 0px 2px #999;
+    }
+  }
+}
+
+
+/* Formatvorlagen im TinyMCE
+   -------------------------------------------------------------------------- */
+
+.text-highlight-1 {
+  .headline--1;
+}
+
+.text-highlight-2 {
+  .c-btn;
+}
+
+
+ /* ==========================================================================
+   Allgemeine Klassen und Framework-Styles
+   ========================================================================== */
+
+// Abstand bei .c_img wenn div rechts nicht gefloatet wird
+.z-img-gap() {
+  margin-right: 2.5641%;
+}
+
+.z-box-shadow() {
+  .box-shadow(2px,2px,5px, rgba(200,200,200,0.3););
+}
+
+.z-gradient() {
+  background: #f2f2f2; /* Old browsers */
+  background: -moz-linear-gradient(top,  #f2f2f2 0%, #dddddd 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f2f2f2), color-stop(100%,#dddddd)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #f2f2f2 0%,#dddddd 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #f2f2f2 0%,#dddddd 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #f2f2f2 0%,#dddddd 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #f2f2f2 0%,#dddddd 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#dddddd',GradientType=0 ); /* IE6-9 */
+}
+
+.z-gradient-transparent() {
+  background: -moz-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(19,19,19,0.19) 32%, rgba(19,19,19,0.6) 100%);
+  background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%,rgba(19,19,19,0.19) 32%,rgba(19,19,19,0.6) 100%);
+  background: linear-gradient(to right, rgba(255,255,255,0) 0%,rgba(19,19,19,0.19) 32%,rgba(19,19,19,0.6) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#99131313',GradientType=1 );
+}
+
+.z-mobile-padding() {
+  @media @md-down {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

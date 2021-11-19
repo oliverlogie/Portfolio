@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Code Review 03</title>
+
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script src="js/script.js"></script>
+
+</head>
+<body>
+
+<div class="container">
+
+	<header id="header">
+	
+
+		<div id=headerpic>
+			<div id="textheader">
+			<img class="headerleft" src="img\logo.png" alt="Banner Image">
+			<img class="headerright"src="img\banner.png" alt="Banner Image">
+		</div>
+		</div>	
+			<div class="navbar">
+			  <a href="index.html">Home</a> 
+			  <a href="tech.html">Team</a> 
+
+			</div>	
+	</header>
+	<!-- navbar ends here -->
+		<div class="content">
+			<div class="contentheader">
+				<h1>Car Insurance</h1>
+			</div>
+            
+            <div id="box">
+            	<h2 class="quote">Great coverage begins with a costum qoute</h2>
+                <div class="ibox">
+                    <div class="input">
+                        <div>
+                            Your name:
+                        </div>
+                        <div>
+                            <input type="text" id="name"  placeholder="Your name" />
+                        </div>
+                    </div>
+                    <div class="input">
+                        <div>
+                            Your Age
+                        </div>
+                        <div>
+                            <input type="number" id="number"  placeholder="Age"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="ibox">
+                    <div class="input">
+                        <div>
+                            Country:
+                        </div>
+                        <div>
+                            <select id="countries">
+                                <option value="austria" id="austria">Austria</option>
+                                <option value="hungary" id="hungary">Hungary</option>
+                                <option value="greece" id="greece">Greece</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="input">
+                        <div>
+                            Horesepower of your car:
+                        </div>
+                        <div>
+                            <input type="number" id="power"  placeholder="horsepower"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="enter">
+                	<button type="submit" onclick="Insurance()">Calculate</button>	
+            	</div>
+            	<p id="result">Printed calculation goes here</p>
+           		</div>
+        </div>
+
+        <div class="midsection">
+			<h1>Un-complicating car coverage</h1>
+			<p> Understanding your coverage options shouldn't be so hard.</p>
+			<p> We'll guide you through available overage types, starting with who and what is covered</p>
+		</div>
+		<div id="background2">
+			<div id="flexbox">
+				<div class=flexitem>
+					<h3>What comes standard</h3>
+					<p>The coverage you need</p>
+					<ol>
+						<li>Bodily Injury Liability</li>
+						<li>Property Damage</li>
+						<li>Medical Payments</li>
+					</ol>
+					<h4>Benefits</h4>
+					<p>12-month rate garantee |24/7 customer service | Lifetime Repair guarantee</p>
+				</div>
+				<div class=flexitem>
+					<h3>Add-on protection &  coverage</h3>
+					<p>For more peace of mind</p>
+					<ol>
+						<li>Better Car Replacement</li>
+						<li>Towing & Labor</li>
+						<li>Rental Coverage</li>
+					</ol>
+					<h4>Benefits</h4>
+					<p>Accident Forgiveness | New Car Replacement&trade;</p>
+				</div>
+			</div>
+		</div>
+
+	<footer class="footer">
+		  <div class="navbar">
+		  <a href="index.html">Home</a> 
+		  <a href="tech.html">Team</a> 
+		</div>
+		<div class="botpic">
+		<img src="img/logo-inv.png" alt="Banner Image">
+		</div>
+		<div class="sign">
+			<p>Oliver Kraus - CodeFactory 2020</p>
+		</div>
+	</footer>
+</div>
+</body>
+</html>

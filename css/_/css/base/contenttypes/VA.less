@@ -1,0 +1,98 @@
+/* ==========================================================================
+   ContentitemVA
+   ========================================================================== */
+
+.ct_va {
+
+  .va_main_content {
+    .va_image_container {
+
+      .ct_img {
+        .z-img-gap();
+      }
+    }
+  }
+
+  .va_nav_container{
+    .z-gradient();
+    margin: 30px 0 25px 0;
+    border-bottom: 2px solid #D0D0D0;
+    color: #fff;
+
+    ul {
+      padding: 0;
+      margin: 0;
+
+      li {
+        float: left;
+        padding: 6px 10px;
+        list-style: none;
+        border-right: 2px #fff solid;
+        background: #00A7ED;
+
+        &.nav_item_active, &:hover {
+          background: #aaa; /* Old browsers */
+        }
+
+        a {
+          color:#fff;
+          display:inline-block;
+        }
+      }
+    }
+
+    // spaltige Navigation
+    @media (max-width: 767px) {
+      background: #fff !important;
+      border-bottom: 0;
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#fff',GradientType=0 ); /* IE6-9 */
+
+        ul {
+          li {
+            width: 49.78%;
+            float: left;
+            position: relative;
+            padding: 6px 0;
+            border-bottom: 1px solid #fff;
+            border-left: medium none !important;
+            border-right: 1px solid #fff;
+
+            a {
+              text-align: left;
+              width: 100%;
+              padding-left: 15px;
+              display: inline-block;
+            }
+          }
+        }
+
+    }
+
+    // spaltige Navigation
+    @media (max-width: 480px) {
+      background: #fff !important;
+      border-bottom: 0;
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fff', endColorstr='#fff',GradientType=0 ); /* IE6-9 */
+
+        ul {
+          li {
+            width: 100%;
+            float: left;
+            position: relative;
+            padding: 6px 0;
+            border-bottom: 1px solid #fff;
+            border-left: medium none !important;
+            border-right: 1px solid #fff;
+
+            a {
+              text-align: left;
+              width: 100%;
+              padding-left: 15px;
+              display: inline-block;
+            }
+          }
+        }
+
+    }
+  }
+}

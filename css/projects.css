@@ -1,0 +1,454 @@
+
+*{
+    font-family: 'Manrope', sans-serif;
+    margin:0;
+}
+
+body { 
+    animation: fadeInAnimation ease 4s;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards;
+    background-color: black;
+} 
+  
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+     } 
+} 
+
+*{
+    text-decoration: none;
+}
+
+
+.icon
+    {
+        height: 40px;
+        width: 40px;
+        background-color: white;
+        border-radius: 100%;
+        display: inline-block;
+        border:solid white;
+      }
+.iconN{
+    margin:0;
+    height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color:black;
+
+}
+
+.flex{
+    display:flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+}
+.flexNav{
+  display:flex;
+  padding-top: 1.5rem;
+}
+
+
+.nameNav{
+    margin-left: 1rem;
+    color:white;
+}
+
+.margin{
+    margin-top: 3rem;
+    margin-left: 3rem;
+}
+
+/* --------------------------------nav menu------------------------------------- */
+
+
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #212121;
+  width: 250px;
+  box-sizing: border-box;
+  transition: all 250ms;
+  -webkit-transform: translateZ(0) translateX(100%);
+  transform: translateZ(0) translateX(100%);
+  text-align: center;
+  box-shadow: 0 0 10px #000;
+  z-index: 99;
+  
+}
+
+.active {
+  transform: translateZ(0) translateX(0);
+  transform: translateZ(0) translateX(0);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.navheader {
+  margin-top: 100px;
+  color:white;
+}
+ul {
+  padding: 0;
+  list-style: none;
+  font-size: 18px;
+}
+li {
+  padding: 7px 10px;
+}
+.navL {
+  text-decoration: none;
+  padding: 10px 15px;
+  color: white;
+  font-family: "Monrope";
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.navL:hover{
+    background-color: white;
+    color:black;
+}
+
+.content {
+  position: relative;
+  width: 50px;
+  z-index: 99;
+}
+.button {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  cursor: pointer;
+  margin:0;
+
+}
+.line {
+  width: 40px;
+  height: 2px;
+  background-color: white;
+  transition: transform 0.3s ease, background 0.3s ease, opacity 0.3s ease,
+    top 0.3s ease;
+}
+.line.first {
+  transform: translateX(-10px) translateY(22px) rotate(-90deg);
+}
+.line.second {
+  transform: translateX(-10px) translateY(19px) rotate(0deg);
+}
+.button.on .line.top {
+  width: 40px;
+  transform: translateX(-10px) translateY(20px) rotate(45deg);
+}
+.button.on .line.bottom {
+  width: 40px;
+  transform: translateX(-10px) translateY(17px) rotate(-45deg);
+}
+
+.marginN{
+    margin-top: 2rem;
+    margin-right: 8rem;
+}
+
+.transition {
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.hvr-float {
+    backface-visibility: hidden;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    display: inline-block;
+    transform: translateZ(0px);
+    transition-duration: 0.3s;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+    vertical-align: middle;
+}
+.hvr-float:hover, .hvr-float:focus, .hvr-float:active {
+    transform: translateY(-8px);
+}
+
+.menuO{
+  height: 40px;
+  line-height: 60px;
+  text-align: center;
+  padding-right: 1rem;
+  color:white;
+}
+/* ----------------------------------------Text---------------------------- */
+
+.textO{
+    color:white;
+    bottom:0;
+    position: relative;
+    margin-top: 40vh;
+    margin-left: 10vh;
+}
+
+.pf{
+  text-decoration: none;
+  color:white;
+  padding-right:1rem;
+  padding-left:0.2rem;
+
+}
+
+.mI{
+  text-decoration: none;
+  color:white;
+  padding-left:1rem;
+
+}
+
+.pf:hover, .mI:hover{
+  color:black;
+}
+
+
+.mTNav{
+  margin-top: 0.5rem;
+}
+
+.mT1{
+  margin-top: 0.5rem;
+}
+
+.header{
+  font-size: 3rem;
+}
+
+.grey{
+  color:#D3D3D3;
+}
+
+.contentO{
+    height:100%;
+    background-color: white;
+}
+
+.flex1{
+    display:flex;
+    justify-content: center;
+}
+.flex2{
+    display:flex;
+    justify-content: center;
+    margin-top: 5rem;
+    padding-bottom: 5rem;
+}
+.cardC1{
+    width:35%;
+    height:60vh;
+    margin-right: 3rem;
+    margin-left: 3rem;
+}
+
+.textS:hover{
+    display:none;
+}
+
+.mT{
+    padding-top: 3rem;
+    padding-left: 3rem;
+    padding-bottom: 3rem;
+}
+
+.cardT{
+    color:white;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    margin-right: 4rem;
+}
+
+.size{
+    font-size: 5vh;
+  }
+
+.name{
+    display:none;
+}
+/* ------------------------------------------- Overlay ------------------------------- */
+
+.overlay {
+    position:absolute;
+    top:0;left:0;right:0;bottom:0;
+     background-color: rgba(0,0,0,0);
+}
+  .overlay:hover {
+    opacity: 0.9;
+    background-color: rgba(0,0,0,1);
+  
+  }
+
+.clickMe{
+    color:white;
+    text-align: center;
+    padding-top:30vh;
+}
+
+/* ---------------------------------------------IMAGES---------------------------------- */
+
+.bg1{
+    background-image: url("../assets/img/movie.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .bg2{
+    background-image: url("../assets/img/insurance.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .bg3{
+    background-image: url("../assets/img/flexbox.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .bg4{
+    background-image: url("../assets/img/sam.png");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+
+/* -------------------------------------------------------Footer-------------------------------------------------- */
+
+.footer{
+  height: 15vh;
+  padding-top: 10vh;
+  background-color: white;
+}
+
+.iconsF{
+  margin-top: 2vh;
+  width:7vh;
+  height:7vh;
+  margin-left: 6vh;
+
+}
+
+.gmailIconF{
+  margin-top: 2vh;
+  width:5vh;
+  height:5vh;
+  margin-left: 6vh;
+
+}
+
+.github{
+  margin-top: 2vh;
+  width:20vh;
+  height:7vh;
+
+}
+.flexF{
+  display: flex;
+  justify-content: center;
+}
+
+.flaticon{
+  position: absolute;
+  bottom: 0;
+  font-size: 1.5vh;
+}
+
+.textF{
+  position: relative;
+}
+
+.gmailF{
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 6vh;
+}
+
+/* -------------------------------------------------------Pop-ups-------------------------------------------------- */
+
+
+#projects{
+    display: none;
+}
+
+
+
+
+/* ----------------------------------------------------MEDIA QUERIES----------------------------------------------- */
+
+@media only screen and (max-width: 1000px) {
+    .flex1{
+        display:block;
+    }
+    .flex2{
+        display:block;
+    }
+    .overlay{
+        display:block;
+        text-align: center;
+    }
+    .cardC1{
+        width:60%;
+        margin-left: 20%;
+
+    }
+    .mP{
+        padding-top:1rem;
+    }
+    .name{
+        display:block;
+    }
+  }
+
+@media only screen and (max-width: 500px) {
+    .clickMe{
+        display:none;
+    }
+    .name{
+        display:block;
+    }
+  }
+
+/* ---------------------------------------------MEDIA QUERIES------------------------------------------ */
+
+@media only screen and (max-width: 650px) {
+  .textO{
+      display:none;
+  }
+  .icon{
+    display:none;
+  }
+  .iconN{
+    display:none;
+  }
+  .nameNav{
+    display:none;
+  }
+}
+
+@media only screen and (max-height: 560px) {
+  .textO{
+      display:none;
+  }
+}

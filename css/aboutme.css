@@ -1,0 +1,351 @@
+
+*{
+    font-family: 'Manrope', sans-serif;
+    margin:0;
+}
+
+body { 
+    animation: fadeInAnimation ease 4s;
+    animation-iteration-count: 1; 
+    animation-fill-mode: forwards;
+    background-color: white;
+} 
+  
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+    } 
+    100% { 
+        opacity: 1; 
+     } 
+} 
+
+*{
+    text-decoration: none;
+}
+
+nav{
+  height:150px;
+}
+
+
+
+.icon
+    {
+        height: 40px;
+        width: 40px;
+        background-color: white;
+        border-radius: 100%;
+        display: inline-block;
+        border:solid white;
+      }
+.iconN{
+    margin:0;
+    height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color:black;
+
+}
+
+.flex{
+    display:flex;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+}
+.flexNav{
+  display:flex;
+  padding-top: 1.5rem;
+}
+
+
+.nameNav{
+    margin-left: 1rem;
+    color:white;
+}
+
+.margin{
+    margin-top: 3rem;
+    margin-left: 3rem;
+}
+
+/* --------------------------------nav menu------------------------------------- */
+
+
+.menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #212121;
+  width: 250px;
+  box-sizing: border-box;
+  transition: all 250ms;
+  -webkit-transform: translateZ(0) translateX(100%);
+  transform: translateZ(0) translateX(100%);
+  text-align: center;
+  box-shadow: 0 0 10px #000;
+  z-index: 99;
+}
+
+.active {
+  transform: translateZ(0) translateX(0);
+  transform: translateZ(0) translateX(0);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+.navheader {
+  margin-top: 100px;
+  color:white;
+}
+ul {
+  padding: 0;
+  list-style: none;
+  font-size: 18px;
+}
+li {
+  padding: 7px 10px;
+}
+.navL {
+  text-decoration: none;
+  padding: 10px 15px;
+  color: white;
+  font-family: "Monrope";
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.navL:hover{
+    background-color: white;
+    color:black;
+}
+
+.content {
+  position: relative;
+  width: 50px;
+  z-index: 99;
+}
+.button {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  cursor: pointer;
+  margin:0;
+
+}
+.line {
+  width: 40px;
+  height: 2px;
+  background-color: white;
+  transition: transform 0.3s ease, background 0.3s ease, opacity 0.3s ease,
+    top 0.3s ease;
+}
+.line.first {
+  transform: translateX(-10px) translateY(22px) rotate(-90deg);
+}
+.line.second {
+  transform: translateX(-10px) translateY(19px) rotate(0deg);
+}
+.button.on .line.top {
+  width: 40px;
+  transform: translateX(-10px) translateY(20px) rotate(45deg);
+}
+.button.on .line.bottom {
+  width: 40px;
+  transform: translateX(-10px) translateY(17px) rotate(-45deg);
+}
+
+.marginN{
+    margin-top: 2rem;
+    margin-right: 8rem;
+}
+
+.transition {
+    cursor: pointer;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.hvr-float {
+    backface-visibility: hidden;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    display: inline-block;
+    transform: translateZ(0px);
+    transition-duration: 0.3s;
+    transition-property: transform;
+    transition-timing-function: ease-out;
+    vertical-align: middle;
+}
+.hvr-float:hover, .hvr-float:focus, .hvr-float:active {
+    transform: translateY(-8px);
+}
+
+.menuO{
+  height: 40px;
+  line-height: 60px;
+  text-align: center;
+  padding-right: 1rem;
+  color:white;
+}
+
+/* --------------------------------------------CONTENT-------------------------------------------------- */
+
+.contentE{
+    background-color: white;
+}
+
+.headerSkill{
+  font-size: 40px;
+  padding-top: 3vh;
+  margin-left:5vh;
+  margin-top:5vh;
+  margin-bottom: 8vh;
+}
+
+.contentA{
+    color:white;
+    bottom:0;
+    position: relative;
+    margin-top: 20vh;
+    margin-left: 10vh;
+}
+
+.bg{ 
+  background: url("../assets/img/KrausOliver12_v1.jpg"); 
+  object-fit: fill;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height:70vh;
+}
+
+.headerA{
+  margin-bottom: 2vh;
+}
+
+.flexA{
+  display:flex;
+  justify-content: space-evenly;
+  margin-top: 3vh;
+  margin-bottom: 5vh;
+}
+
+.marginA{
+  margin-right: 5vh;
+  padding-left: 1vh;
+}
+
+.moreMarginA{
+  margin-left: 6vh;
+}
+
+.borderW{
+  border-left: solid black;
+}
+
+.headerOS{
+  margin-top: 5vh;
+  margin-bottom: 2vh;
+}
+
+.emailO{
+  color: grey;
+}
+
+.emailO:hover{
+  color:white;
+}
+
+.mobileO{
+  margin-left:5vh;
+  margin-bottom: 8vh;
+  margin-top: 3vh;
+  display: none;
+}
+
+
+/* -------------------------------------------------MEDIA QUERIES-------------------------------------- */
+
+@media only screen and (max-width: 1000px) {
+    .flex1{
+        display:block;
+    }
+    .flex2{
+        display:block;
+    }
+    .overlay{
+        display:block;
+        text-align: center;
+    }
+    .cardC1{
+        width:60%;
+        margin-left: 20%;
+
+    }
+    .mP{
+        padding-top:1rem;
+    }
+    .name{
+        display:block;
+    }
+  }
+
+@media only screen and (max-width: 500px) {
+    .clickMe{
+        display:none;
+    }
+    .name{
+        display:block;
+    }
+  }
+
+  @media only screen and (max-width: 1050px) {
+    .flexA{
+      display:block;
+      text-align: center;
+    }
+    .marginA{
+      margin: 0;
+    }
+    .moreMarginA{
+      margin: 0;
+    }
+    .mobileO{
+      display:block;
+    }
+    .contentA{
+      display:none;
+    }
+  }
+
+/* ---------------------------------------------MEDIA QUERIES------------------------------------------ */
+
+@media only screen and (max-width: 700px) {
+  .textO{
+      display:none;
+  }
+  .icon{
+    display:none;
+  }
+  .iconN{
+    display:none;
+  }
+  .bg{
+  background: url("../assets/img/KrausOliver12_mobile.jpg"); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  }
+}
+
+@media only screen and (max-height: 560px) {
+  .textO{
+      display:none;
+  }
+}

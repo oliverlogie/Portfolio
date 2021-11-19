@@ -1,0 +1,34 @@
+/* ========================================================================== */
+/* ModuleForm
+/* ========================================================================== */
+
+.ct-fo {
+  select,
+  input[type=text],
+  input[type=password],
+  input[type=email],
+  input[type=tel],
+  input[type=url],
+  input[type=date],
+  input[type=search],
+  textarea {
+    width: 100%;
+  }
+
+}
+
+.form {
+  margin-bottom: 10px;
+
+  &__label {
+    &--error {
+      color: @form-failure-color;
+    }
+  }
+
+  &__input {
+    &--error {
+
+    }
+  }
+}

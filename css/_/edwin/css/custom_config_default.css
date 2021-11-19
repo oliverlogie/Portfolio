@@ -1,0 +1,1538 @@
+/*******************************************************************************
+ EDWIN CMS BACKEND CSS DEFAULT CONFIG
+
+ Do not change for EDWIN projects!
+ 1) Copy this file and rename it to custom_config.css.
+ 2) Add custom_config.css to svn version control
+
+*******************************************************************************/
+
+/*******************************************************************************
+
+ GENERAL SETTINGS
+
+*******************************************************************************/
+
+/* Campaign attachment: Field to set custom (additional) data origin text */
+.display_m_cg_data_origin_field{display:block;}
+/* Field to set office mail recipients */
+.display_m_cg_recipient_field{display:block;}
+
+/* Minify */
+.display_minify_cssless{display:inline;}
+.display_minify_jshrink{display:inline;}
+
+/* Hide all move up and move down buttons by default */
+.q2e_icon_move_up {display:none}
+.q2e_icon_move_down {display:none}
+
+/*******************************************************************************
+ Logische Ebene
+*******************************************************************************/
+
+.display_logical_image1 {display:block;}
+
+/*******************************************************************************
+
+ CONTENT TYPES
+
+*******************************************************************************/
+
+/*******************************************************************************
+ ContentItem
+*******************************************************************************/
+
+.display_ci_comments{display:block;}
+.display_ci_content{display:block;}
+.display_ci_extlinks{display:block;}
+.display_ci_files{display:block;}
+.display_ci_intlinks{display:block;}
+.display_ci_strlinks{display:block;}
+.display_ci_preview_link{display: none !important;}
+
+/*******************************************************************************
+ ContentItemBE
+*******************************************************************************/
+
+/*Titel / Text / Bild */
+.display_be_title1_label{display:block;}
+.display_be_text1_label{display:block;}
+.display_be_image1{display:block;}
+
+/*******************************************************************************
+ ContentItemBG
+*******************************************************************************/
+
+.display_bg_title1_label{display:block;}
+.display_bg_title2_label{display:block;}
+.display_bg_title3_label{display:block;}
+.display_bg_text1_label{display:block;}
+.display_bg_text2_label{display:block;}
+.display_bg_text3_label{display:block;}
+
+.display_bg_image_src{display:block;}
+.display_bg_image1_alt_text{display:none;}
+
+.display_bg_gallery_image_title{display:block;}
+.display_bg_gallery_image_subtitle{display:none;}
+.display_bg_gallery_image_text{display:block;}
+
+/*******************************************************************************
+ ContentItemCA
+*******************************************************************************/
+
+.display_ca_link_label {display:block;}
+
+.display_ca_title1{display:block;}
+.display_ca_text1{display:block;}
+.display_ca_image1_container{display:block;}
+.display_ca_image_src1{display:block;}
+.display_ca_image1_title{display:block;}
+.display_ca_image1_alt_text{display:none}
+
+/*.display_ca_text2{display:block;}
+.display_ca_image2_container{display:block;}
+.display_ca_image_src2{display:block;}
+.display_ca_image2_title{display:block;}
+.display_ca_image2_alt_text{display:none}*/
+/*
+.display_ca_text3{display:block;}
+.display_ca_image3_container{display:block;}
+.display_ca_image_src3{display:block;}
+.display_ca_image3_title{display:block;}
+.display_ca_image3_alt_text{display:none}*/
+
+.display_ca_actions_label {display:block;}
+
+/*Allgemeine Bereich- und Boxeneinstellungen*/
+/*Bereich allgemein und Bereichs aktionsboxen wenn kein Bild und Alt text vorhanden ist*/
+.display_ca_area_container{display:block;}
+.display_ca_area_actions_label{display:block;}
+.display_ca_area_additionalfunctions_label{display:block;}
+
+/*Bereich Überschrift*/
+.display_ca_area_title{display:block;}
+/*.display_ca_area_link{display:block;}
+.display_ca_area_extlink{display:block;}*/
+/*.display_ca_area_image {display:block;}
+.display_ca_area_image1_alt_text{display:none}*/
+.display_ca_area_text {display:block;}
+
+/*Icons zum Verschieben der Position*/
+/*.display_ca_area_move_position{display:block;}*/
+
+/*Bereich allgemein und Bereichs aktionsboxen wenn kein Bild und Alt text vorhanden ist*/
+/*Bereich 1
+#caarea_1 .display_ca_area_actions_label{display:block;}
+#caarea_1 .display_ca_area_additionalfunctions_label{display:block;}*/
+/*Bereich 1 Überschrift
+#caarea_1 .display_ca_area_title{display:block;}*/
+/*Bereich 1 Bild und alt-Text Container
+#caarea_1 .display_ca_area_image_container{display:block;}*/
+/*Bereich 1 Bild
+#caarea_1 .display_ca_area_image_container .display_ca_area_image_label{display:block;}
+ #caarea_1 .display_ca_area_image_container .display_ca_area_image_src{display:block;}*/
+/*Bereich 1 alt text
+#caarea_1 .display_ca_area_image_container .display_ca_area_text_label b{display:block;}
+#caarea_1 .display_ca_area_image_container .display_ca_shorttext{display:block;}*/
+
+/*LARGE BOX Allgmein*/
+.display_ca_area_large_box_link{display:block;}
+.display_ca_area_large_box_extlink{display:block;}
+.display_ca_area_large_box_title{display:block;}
+.display_ca_area_large_box_image_src{display:block;}
+.display_ca_area_large_box_image1_alt_text{display:none;}
+.display_ca_area_large_box_text{display:block;}
+/*Bereich 1*/
+/*Box 1 Link
+#caarea_11 .display_ca_area_large_box_link{display:block;}*/
+/*Box 1 Überschrift
+#caarea_11 .display_ca_area_large_box_title{display:block;}*/
+/*Box 1 Bild
+#caarea_11 .display_ca_area_large_box_image_src{display:block; visibility:hidden;} */
+/*Box 1 Alt Text
+#caarea_11 .display_ca_area_large_box_text_label{display:block;}
+#caarea_11 .display_ca_area_large_box_shorttext{display:block;}*/
+
+/*MEDIUM BOX*/
+/*MEDIUM BOX allgmein*/
+.display_ca_area_medium_box_link{display:block;}
+.display_ca_area_medium_box_extlink{display:block;}
+.display_ca_area_medium_box_title{display:block;}
+.display_ca_area_medium_box_image_src{display:block;}
+.display_ca_area_medium_box_image1_alt_text{display:none;}
+/*Box 1 Link
+#caarea_11 .display_ca_area_medium_box_link{display:block;}*/
+/*Box 1 Überschrift
+#caarea_11 .display_ca_area_medium_box_title{display:block;}*/
+/*Box 1 Bild
+#caarea_11 .display_ca_area_medium_box_image_src{display:block;}*/
+
+/*SMALL BOX*/
+/*SMALL BOX allgmein*/
+.display_ca_area_small_box_link{display:block;}
+.display_ca_area_small_box_extlink{display:block;}
+.display_ca_area_small_box_title{display:block;}
+/*Bereich 1*/
+/*Box 1 Link
+#caarea_11 display_ca_area_small_box_link{display:block;}*/
+/*Box 1 Überschrift
+#caarea_11 display_ca_area_small_box_title{display:block;}*/
+
+/*******************************************************************************
+ ContentItemCB
+*******************************************************************************/
+
+.display_cb_default_container{display:block;}
+.display_cb_title1_label{display:block;}
+.display_cb_text1_label{display:block;}
+.display_cb_image1_container{display:block;}
+.display_cb_image1{display:block;}
+.display_cb_image1_title{display:block;}
+.display_cb_image1_alt_text{display:none;}
+/*.display_cb_text2_label{display:block;}
+.display_cb_text3_label{display:block;}*/
+.display_cb_actions_label{display:block;}
+
+.display_cb_box_link{display:block;}
+.display_cb_box_title{display:block;}
+.display_cb_box_image_container{display:block;}
+.display_cb_box_image{display:block;}
+.display_cb_box_image1_title{display:block;}
+.display_cb_box_image1_alt_text{display:none;}
+.display_cb_box_auto_image{display:block;}
+.display_cb_box_text{display:block;}
+.display_cb_box_biglinks{display:block;}
+.display_cb_box_biglinks_auto_image{display:block;}
+.display_cb_box_biglinks_image1_alt_text{display:none;}
+.display_cb_box_smalllinks{display:block;}
+
+/*******************************************************************************
+ ContentItemCM
+*******************************************************************************/
+
+.display_cm_title1_label{display:block;}
+/*.display_cm_title2_label{display:block;}
+.display_cm_title3_label{display:block;}*/
+.display_cm_text1_label{display:block;}
+/*.display_cm_text2_label{display:block;}
+.display_cm_text3_label{display:block;}*/
+.display_cm_image1_container{display:block;}
+/*..display_cm_image2_container{display:block;}
+.display_cm_image3_container{display:block;}*/
+.display_cm_image1{display:block;}
+/*.display_cm_image2{display:block;}
+.display_cm_image3{display:block;}*/
+.display_cm_img1_title{display:block;}
+/*.display_cm_img2_title{display:block;}
+.display_cm_img3_title{display:block;}*/
+.display_cm_recipient{display:block;}
+
+/*******************************************************************************
+ ContentItemCP
+*******************************************************************************/
+
+.display_cp_area1_container{display:block;}
+.display_cp_area2_container{display:block;}
+.display_cp_area3_container{display:block;}
+
+.display_cp_title1_label{display:block;}
+.display_cp_text1_label{display:block;}
+.display_cp_image_src1{display:block;}
+
+.display_cp_title2_label{display:block;}
+.display_cp_text2_label{display:block;}
+.display_cp_image_src2{display:block;}
+
+.display_cp_title3_label{display:block;}
+.display_cp_text3_label{display:block;}
+.display_cp_image_src3{display:block;}
+
+/*******************************************************************************
+ ContentItemCX
+*******************************************************************************/
+
+.display_cx_title1_label{display:block;}
+.display_cx_title2_label{display:block;}
+.display_cx_title3_label{display:block;}
+.display_cx_image1_container{display:block;}
+.display_cx_image2_container{display:block;}
+.display_cx_image3_container{display:block;}
+.display_cx_image_src1{display:block;}
+.display_cx_image_src2{display:block;}
+.display_cx_image_src3{display:block;}
+.display_cx_image1_title{display:block;}
+.display_cx_image2_title{display:block;}
+.display_cx_image3_title{display:block;}
+.display_cx_text1_label{display:block;}
+.display_cx_text2_label{display:block;}
+.display_cx_text3_label{display:block;}
+
+/*******************************************************************************
+ ContentItemDL
+*******************************************************************************/
+
+.display_dl_default_container{display:block;}
+.display_dl_title_label{display:block;}
+.display_dl_text1_label{display:block;}
+.display_dl_text2_label{display:block;}
+.display_dl_image_container{display:block;}
+.display_dl_image_src{display:block;}
+.display_dl_image_title{display:block;}
+
+/*DL Box*/
+.display_dl_area_default_container{display:block;}
+.display_dl_area_title_label{display:block;}
+.display_dl_area_image_container{display:block;}
+.display_dl_area_image_src{display:block;}
+.display_dl_area_image_title{display:block;}
+.display_dl_area_text_label{display:block;}
+
+/*******************************************************************************
+ ContentItemEC
+*******************************************************************************/
+
+.display_ec_title_label{display:block;}
+.display_ec_text1_label{display:block;}
+.display_ec_text2_label{display:block;}
+.display_ec_text3_label{display:block;}
+.display_ec_image_container{display:block;}
+.display_ec_image_src{display:block;}
+.display_ec_department_options{display:block;}
+.display_ec_type_options{display:block;}
+.display_ec_settings{display:block;}
+
+/*******************************************************************************
+ ContentItemES
+*******************************************************************************/
+
+.display_es_ext{display:block;}
+.display_es_ext_frame_setting_height{display:block;}
+.display_es_title1_label{display:block;}
+.display_es_text1_label{display:block;}
+.display_es_title2_label{display:block;}
+.display_es_text2_label{display:block;}
+.display_es_title3_label{display:block;}
+.display_es_text3_label{display:block;}
+.display_es_image_src1{display:block;}
+.display_es_image1_title{display:none;}
+.display_es_image_src2{display:block;}
+.display_es_image2_title{display:none;}
+.display_es_image_src3{display:block;}
+.display_es_image3_title{display:none;}
+
+/*******************************************************************************
+ ContentItemFQ
+*******************************************************************************/
+
+.display_fq_default_container{display:block;}
+.display_fq_title1_label{display:block;}
+/*.display_fq_title2_label{display:block;}
+.display_fq_title3_label{display:block;}*/
+.display_fq_image1_container{display:block;}
+/*.display_fq_image2_container{display:block;}
+.display_fq_image3_container{display:block;}*/
+.display_fq_image_src1{display:block;}
+/*.display_fq_image_src2{display:block;}
+.display_fq_image_src3{display:block;}*/
+/*.display_fq_image1_title{display:block;}*/
+/*.display_fq_image2_title{display:block;}
+.display_fq_image3_title{display:block;}*/
+.display_fq_text1_label{display:block;}
+/*.display_fq_text2_label{display:block;}
+.display_fq_text3_label{display:block;}*/
+
+/*FQ Question*/
+.display_fq_question_title{display:block;}
+.display_fq_question_image_container{display:block;}
+.display_fq_question_image_src{display:block;}
+.display_fq_question_image_title{display:block;}
+.display_fq_question_text_label{display:block;}
+
+/*******************************************************************************
+ ContentItemIB
+*******************************************************************************/
+
+/*Titel / Text / Bild */
+.display_ib_title1_label{display:block;}
+.display_ib_text1_label{display:block;}
+.display_ib_image1{display:block;}
+
+/*******************************************************************************
+ ContentItemIP
+*******************************************************************************/
+
+/*Titel / Text / Bild */
+.display_ip_title1_label{display:block;}
+.display_ip_text1_label{display:block;}
+.display_ip_image1{display:block;}
+
+/*******************************************************************************
+ ContentItemLI
+*******************************************************************************/
+
+.display_login_login_container{display:block;}
+.display_login_registration_container{display:block;}
+.display_login_password_container{display:block;}
+.display_login_title1_label{display:block;}
+.display_login_title2_label{display:block;}
+.display_login_title3_label{display:block;}
+.display_login_title4_label{display:block;}
+.display_login_title5_label{display:block;}
+.display_login_title6_label{display:block;}
+.display_login_title7_label{display:block;}
+.display_login_title8_label{display:block;}
+.display_login_title9_label{display:block;}
+.display_login_text1_label{display:block;}
+.display_login_text2_label{display:block;}
+.display_login_text3_label{display:block;}
+.display_login_text4_label{display:block;}
+.display_login_text5_label{display:block;}
+.display_login_text6_label{display:block;}
+.display_login_text7_label{display:block;}
+.display_login_text8_label{display:block;}
+.display_login_text9_label{display:block;}
+.display_login_image1_container{display:block;}
+.display_login_image2_container{display:block;}
+.display_login_image3_container{display:block;}
+.display_login_image4_container{display:block;}
+.display_login_image5_container{display:block;}
+.display_login_image6_container{display:block;}
+.display_login_image7_container{display:block;}
+.display_login_image8_container{display:block;}
+.display_login_image9_container{display:block;}
+.display_login_image1{display:block;}
+.display_login_image2{display:block;}
+.display_login_image3{display:block;}
+.display_login_image4{display:block;}
+.display_login_image5{display:block;}
+.display_login_image6{display:block;}
+.display_login_image7{display:block;}
+.display_login_image8{display:block;}
+.display_login_image9{display:block;}
+
+/*******************************************************************************
+ ContentItemLS
+*******************************************************************************/
+
+.display_ls_year{display:block;}
+.display_ls_league{display:block;}
+.display_ls_title1_label{display:block;}
+.display_ls_text1_label{display:block;}
+.display_ls_image1_container{display:block;}
+.display_ls_image_src1{display:block;}
+.display_ls_title2_label{display:block;}
+.display_ls_text2_label{display:block;}
+.display_ls_image2_container{display:block;}
+.display_ls_image_src2{display:block;}
+
+/*******************************************************************************
+ ContentItemMB
+*******************************************************************************/
+
+/*Titel*/
+.display_mb_title1_label{display:block;}
+.display_mb_title2_label{display:block;}
+.display_mb_title3_label{display:block;}
+/*Text*/
+.display_mb_text1_label{display:block;}
+.display_mb_text2_label{display:block;}
+.display_mb_text3_label{display:block;}
+/*Bild*/
+.display_mb_image1{display:block;}
+.display_mb_image2{display:block;}
+.display_mb_image3{display:block;}
+/*Bilduntertitel*/
+.display_mb_img1_title{display:block;}
+.display_mb_img2_title{display:block;}
+.display_mb_img3_title{display:block;}
+/*Kategorieauswahl*/
+.display_mb_categories{display:block;}
+
+/*******************************************************************************
+ ContentItemNL
+*******************************************************************************/
+
+.display_nl_title1_label{display:block;}
+.display_nl_text1_label{display:block;}
+.display_nl_image_container{display:block;}
+.display_nl_image{display:block;}
+.display_nl_title2_label{display:block;}
+.display_nl_text2_label{display:block;}
+.display_nl_title3_label{display:block;}
+.display_nl_text3_label{display:block;}
+
+/*******************************************************************************
+ ContentItemPA
+*******************************************************************************/
+
+.display_pa_title1_label{display:block;}
+.display_pa_title2_label{display:block;}
+.display_pa_title3_label{display:block;}
+.display_pa_text1_label{display:block;}
+.display_pa_text2_label{display:block;}
+.display_pa_text3_label{display:block;}
+.display_pa_image1_container{display:block;}
+.display_pa_image2_container{display:block;}
+.display_pa_image3_container{display:block;}
+.display_pa_image1{display:block;}
+.display_pa_image2{display:block;}
+.display_pa_image3{display:block;}
+.display_pa_img1_title{display:block;}
+.display_pa_img2_title{display:block;}
+.display_pa_img3_title{display:block;}
+
+/*******************************************************************************
+ ContentItemPB
+*******************************************************************************/
+
+.display_pb_title1_label{display:block;}
+.display_pb_text1_label{display:block;}
+.display_pb_image1{display:block;}
+
+/*******************************************************************************
+ ContentItemPI
+*******************************************************************************/
+
+.display_pi_title1_label{display:block;}
+.display_pi_title2_label{display:block;}
+.display_pi_title3_label{display:block;}
+.display_pi_text1_label{display:block;}
+.display_pi_text2_label{display:block;}
+.display_pi_text3_label{display:block;}
+.display_pi_image1_container{display:block;}
+.display_pi_image2_container{display:block;}
+.display_pi_image3_container{display:block;}
+.display_pi_image1{display:block;}
+.display_pi_image2{display:block;}
+.display_pi_image3{display:block;}
+.display_pi_img1_title{display:block;}
+.display_pi_img2_title{display:block;}
+.display_pi_img3_title{display:block;}
+
+/*******************************************************************************
+ ContentItemPO
+*******************************************************************************/
+
+.display_po_title_label{display:block;}
+.display_po_number_label{display:block;}
+.display_po_price_label{display:block;}
+.display_po_text1_label{display:block;}
+.display_po_text2_label{display:block;}
+.display_po_text3_label{display:block;}
+.display_po_image_src1{display:block;}
+
+.display_po_image_src1{display:block;}
+.display_po_image1_title{display:block;}
+.display_po_image_src2{display:block;}
+.display_po_image2_title{display:block;}
+.display_po_image_src3{display:block;}
+.display_po_image3_title{display:block;}
+
+/*******************************************************************************
+ ContentItemPP
+*******************************************************************************/
+
+.display_pp_default_container{display:block;}
+.display_pp_area1_container{display:block;}
+.display_pp_area2_container{display:block;}
+.display_pp_title1_label{display:block;}
+.display_pp_title2_label{display:block;}
+.display_pp_title1_label{display:block;}
+.display_pt_image1_container{display:block;}
+.display_pt_image7_container{display:block;}
+.display_pt_image8_container{display:block;}
+.display_pp_image_src1{display:block;}
+.display_pp_image_src7{display:block;}
+.display_pp_image_src8{display:block;}
+.display_pp_image1_title{display:block;}
+.display_pp_image7_title{display:block;}
+.display_pp_image8_title{display:block;}
+.display_pp_text1_label{display:block;}
+.display_pp_text2_label{display:block;}
+.display_pp_text3_label{display:block;}
+.display_pp_case_packs_label{display:block;}
+.display_pp_shipping_costs_label{display:block;} /* only with $_CONFIG["cp_shipping_costs_type"] = 2 */
+.display_pp_additional_images{display:block;}
+.display_pp_tax_rate_label{display:block;}
+.display_pt_image2_container{display:block;}
+.display_pt_image3_container{display:block;}
+.display_pt_image4_container{display:block;}
+.display_pt_image5_container{display:block;}
+.display_pt_image6_container{display:block;}
+.display_pp_image_src2{display:block;}
+.display_pp_image_src3{display:block;}
+.display_pp_image_src4{display:block;}
+.display_pp_image_src5{display:block;}
+.display_pp_image_src6{display:block;}
+.display_pp_image2_title{display:block;}
+.display_pp_image3_title{display:block;}
+.display_pp_image4_title{display:block;}
+.display_pp_image5_title{display:block;}
+.display_pp_image6_title{display:block;}
+
+/*PP Product*/
+.display_pp_product_case_packs{display:block;}
+.display_pp_product_number{display:block;}
+.display_pp_product_price{display:block;}
+.display_pp_product_title{display:block;}
+.display_pp_product_image1_container{display:block;}
+.display_pp_product_image_src1{display:block;}
+.display_pp_product_image_title1{display:block;}
+.display_pp_product_text_label{display:block;}
+.display_pp_settings_label{display:block;}
+.display_pp_product_shipping_costs{display:block;} /* only with $_CONFIG["cp_shipping_costs_type"] = 2 */
+.display_pp_product_additional_images{display:block;}
+.display_pp_product_image2_container{display:block;}
+.display_pp_product_image3_container{display:block;}
+.display_pp_product_image4_container{display:block;}
+.display_pp_product_image5_container{display:block;}
+.display_pp_product_image6_container{display:block;}
+.display_pp_product_image_src2{display:block;}
+.display_pp_product_image_src3{display:block;}
+.display_pp_product_image_src4{display:block;}
+.display_pp_product_image_src5{display:block;}
+.display_pp_product_image_src6{display:block;}
+.display_pp_product_image_title2{display:block;}
+.display_pp_product_image_title3{display:block;}
+.display_pp_product_image_title4{display:block;}
+.display_pp_product_image_title5{display:block;}
+.display_pp_product_image_title6{display:block;}
+.display_pp_product_additional_data{display:block;}
+.display_pp_product_filter_compare{display:block;}
+.display_pp_product_tax_rate{display:block;}
+
+
+/*******************************************************************************
+ ContentItemPT
+*******************************************************************************/
+
+.display_pt_title1_label{display:block;}
+.display_pt_title2_label{display:block;}
+.display_pt_title3_label{display:block;}
+.display_pt_text1_label{display:block;}
+.display_pt_text2_label{display:block;}
+.display_pt_text3_label{display:block;}
+.display_pt_image1_container{display:block;}
+.display_pt_image2_container{display:block;}
+.display_pt_image3_container{display:block;}
+.display_pt_image1{display:block;}
+.display_pt_image2{display:block;}
+.display_pt_image3{display:block;}
+.display_pt_img1_title{display:block;}
+.display_pt_img2_title{display:block;}
+.display_pt_img3_title{display:block;}
+
+/*******************************************************************************
+ ContentItemQP
+*******************************************************************************/
+
+.display_qp_default_container{display:block;}
+.display_qp_title1_label{display:block;}
+/*.display_qp_title2_label{display:block;}
+.display_qp_title3_label{display:block;}*/
+.display_qp_image1_container{display:block;}
+/*.display_qp_image2_container{display:block;}
+.display_qp_image3_container{display:block;}
+.display_qp_image4_container{display:block;}
+.display_qp_image5_container{display:block;}
+.display_qp_image6_container{display:block;}
+.display_qp_image7_container{display:block;}
+.display_qp_image8_container{display:block;}
+.display_qp_image9_container{display:block;}
+.display_qp_image10_container{display:block;}*/
+.display_qp_image_src1{display:block;}
+/*.display_qp_image_src2{display:block;}
+.display_qp_image_src3{display:block;}
+.display_qp_image_src4{display:block;}
+.display_qp_image_src5{display:block;}
+.display_qp_image_src6{display:block;}
+.display_qp_image_src7{display:block;}
+.display_qp_image_src8{display:block;}
+.display_qp_image_src9{display:block;}
+.display_qp_image_src10{display:block;}
+.display_qp_image1_title{display:block;}
+.display_qp_image2_title{display:block;}
+.display_qp_image3_title{display:block;}
+.display_qp_image4_title{display:block;}
+.display_qp_image5_title{display:block;}
+.display_qp_image6_title{display:block;}
+.display_qp_image7_title{display:block;}
+.display_qp_image8_title{display:block;}
+.display_qp_image9_title{display:block;}
+.display_qp_image10_title{display:block;}*/
+.display_qp_image1_alt_text{display:none;}
+.display_qp_image2_alt_text{display:none;}
+.display_qp_image3_alt_text{display:none;}
+.display_qp_image4_alt_text{display:none;}
+.display_qp_image5_alt_text{display:none;}
+.display_qp_image6_alt_text{display:none;}
+.display_qp_image7_alt_text{display:none;}
+.display_qp_image8_alt_text{display:none;}
+.display_qp_image9_alt_text{display:none;}
+.display_qp_image10_alt_text{display:none;}
+.display_qp_text1_label{display:block;}
+/*.display_qp_text2_label{display:block;}
+.display_qp_text3_label{display:block;}*/
+
+/*QP Statement*/
+/*.display_qp_statement_image1_container{display:block;}*/
+.display_qp_statement_image2_container{display:block;}
+.display_qp_statement_image3_container{display:block;}
+.display_qp_statement_image4_container{display:block;}
+.display_qp_statement_image5_container{display:block;}
+.display_qp_statement_image6_container{display:block;}
+.display_qp_statement_image7_container{display:block;}
+.display_qp_statement_image8_container{display:block;}
+/*.display_qp_statement_image9_container{display:block;}
+.display_qp_statement_image10_container{display:block;}
+.display_qp_statement_image11_container{display:block;}*/
+
+.display_qp_statement_title1{display:block;}
+/*.display_qp_statement_image_src1{display:block;}
+.display_qp_statement_image_title1{display:block;}
+.display_qp_statement_image1_alt_text{display:none;}*/
+/*.display_qp_statement_text1{display:block;}*/
+
+/*QP Statement Content*/
+.display_qp_quote_content_container{display:block;}
+.display_qp_statement_title2{display:block;}
+.display_qp_statement_image_src2{display:block;}
+.display_qp_statement_image_title2{display:block;}
+.display_qp_statement_image2_alt_text{display:none;}
+.display_qp_statement_text2{display:block;}
+.display_qp_statement_title3{display:block;}
+.display_qp_statement_image_src3{display:block;}
+.display_qp_statement_image_title3{display:block;}
+.display_qp_statement_image3_alt_text{display:none;}
+/*.display_qp_statement_text3{display:block;}*/
+/*.display_qp_statement_title4{display:block;}*/
+.display_qp_statement_image_src4{display:block;}
+.display_qp_statement_image_title4{display:block;}
+.display_qp_statement_image4_alt_text{display:none;}
+/*.display_qp_statement_text4{display:block;}*/
+.display_qp_statement_image_src5{display:block;}
+.display_qp_statement_image_title5{display:block;}
+.display_qp_statement_image5_alt_text{display:none;}
+.display_qp_statement_image_src6{display:block;}
+.display_qp_statement_image_title6{display:block;}
+.display_qp_statement_image6_alt_text{display:none;}
+.display_qp_statement_image_src7{display:block;}
+.display_qp_statement_image_title7{display:block;}
+.display_qp_statement_image7_alt_text{display:none;}
+.display_qp_statement_image_src8{display:block;}
+.display_qp_statement_image_title8{display:block;}
+.display_qp_statement_image8_alt_text{display:none;}
+/*.display_qp_statement_image_src9{display:block;}
+.display_qp_statement_image_title9{display:block;}
+.display_qp_statement_image9_alt_text{display:none;}
+.display_qp_statement_image_src10{display:block;}
+.display_qp_statement_image_title10{display:block;}
+.display_qp_statement_image10_alt_text{display:none;}
+.display_qp_statement_image_src11{display:block;}
+.display_qp_statement_image_title11{display:block;}
+.display_qp_statement_image11_alt_text{display:none;}*/
+
+/*******************************************************************************
+ ContentItemQS
+*******************************************************************************/
+
+.display_qs_default_container{display:block;}
+.display_qs_title1_label{display:block;}
+.display_qs_title2_label{display:block;}
+.display_qs_title3_label{display:block;}
+.display_qs_image1_container{display:block;}
+.display_qs_image2_container{display:block;}
+.display_qs_image3_container{display:block;}
+.display_qs_image_src1{display:block;}
+.display_qs_image_src2{display:block;}
+.display_qs_image_src3{display:block;}
+/*.display_qs_image1_title{display:block;}*/
+.display_qs_image2_title{display:block;}
+.display_qs_image3_title{display:block;}
+.display_qs_image1_alt_text{display:none;}
+.display_qs_image2_alt_text{display:none;}
+.display_qs_image3_alt_text{display:none;}
+.display_qs_text1_label{display:block;}
+.display_qs_text2_label{display:block;}
+.display_qs_text3_label{display:block;}
+
+/*QS Statement*/
+.display_qs_statement_title{display:block;}
+.display_qs_statement_image_container{display:block;}
+.display_qs_statement_image_src{display:block;}
+.display_qs_statement_image_title{display:block;}
+.display_qs_statement_image1_alt_text{display:none;}
+.display_qs_statement_text_label{display:block;}
+
+/*******************************************************************************
+ ContentItemRL
+*******************************************************************************/
+
+.display_rl_title1_label{display:block;}
+.display_rl_title2_label{display:block;}
+.display_rl_title3_label{display:block;}
+.display_rl_text1_label{display:block;}
+.display_rl_text2_label{display:block;}
+.display_rl_text3_label{display:block;}
+.display_rl_image1_container{display:block;}
+.display_rl_image2_container{display:block;}
+.display_rl_image3_container{display:block;}
+.display_rl_image1{display:block;}
+.display_rl_image2{display:block;}
+.display_rl_image3{display:block;}
+.display_rl_img1_title{display:block;}
+.display_rl_img2_title{display:block;}
+.display_rl_img3_title{display:block;}
+.display_rl_tpl_display_settings{display:block;}
+
+/*******************************************************************************
+ ContentItemRS
+*******************************************************************************/
+
+.display_rs_title1_label{display:block;}
+.display_rs_title2_label{display:block;}
+.display_rs_title3_label{display:block;}
+.display_rs_text1_label{display:block;}
+.display_rs_text2_label{display:block;}
+.display_rs_text3_label{display:block;}
+.display_rs_image1_container{display:block;}
+.display_rs_image2_container{display:block;}
+.display_rs_image3_container{display:block;}
+.display_rs_image1{display:block;}
+.display_rs_image2{display:block;}
+.display_rs_image3{display:block;}
+.display_rs_img1_title{display:block;}
+.display_rs_img2_title{display:block;}
+.display_rs_img3_title{display:block;}
+
+/*******************************************************************************
+ ContentItemSC
+*******************************************************************************/
+
+.display_sc_area1_container{display:block;}
+.display_sc_area2_container{display:block;}
+.display_sc_area3_container{display:block;}
+
+.display_sc_title1_label{display:block;}
+.display_sc_text1_label{display:block;}
+.display_sc_image_src1{display:block;}
+
+.display_sc_title2_label{display:block;}
+.display_sc_text2_label{display:block;}
+.display_sc_image_src2{display:block;}
+
+.display_sc_title3_label{display:block;}
+.display_sc_text3_label{display:block;}
+.display_sc_image_src3{display:block;}
+
+/*******************************************************************************
+ ContentItemSD
+*******************************************************************************/
+
+/*Titel*/
+.display_sd_title1_label{display:block;}
+.display_sd_title2_label{display:block;}
+.display_sd_title3_label{display:block;}
+/*Text*/
+.display_sd_text1_label{display:block;}
+.display_sd_text2_label{display:block;}
+.display_sd_text3_label{display:block;}
+/*Bild*/
+.display_sd_image1_container{display:block;}
+.display_sd_image2_container{display:block;}
+.display_sd_image3_container{display:block;}
+.display_sd_image1{display:block;}
+.display_sd_image2{display:block;}
+.display_sd_image3{display:block;}
+/*Bilduntertitel*/
+.display_sd_img1_title{display:block;}
+.display_sd_img2_title{display:block;}
+.display_sd_img3_title{display:block;}
+
+/*******************************************************************************
+ ContentItemSE
+*******************************************************************************/
+
+.display_se_title_label{display:block;}
+.display_se_text_label{display:block;}
+.display_se_image_container{display:block;}
+.display_se_image{display:block;}
+
+/*******************************************************************************
+ ContentItemSP
+*******************************************************************************/
+
+.display_sp_default_container{display:block;}
+.display_sp_type_data1{display:block;}
+.display_sp_type_data2{display:block;}
+.display_sp_image3_title{display:block;}
+.display_sp_default_container2{display:block;}
+
+.display_sp_image_src1{display:block;}
+.display_sp_image1_title{display:block;}
+.display_sp_text1_label{display:block;}
+.display_sp_image_src2{display:block;}
+.display_sp_image2_title{display:block;}
+.display_sp_text2_label{display:block;}
+.display_sp_text3_label{display:block;}
+
+/*******************************************************************************
+ ContentItemST
+*******************************************************************************/
+
+.display_st_default_container{display:block;}
+.display_st_title1_label{display:block;}
+.display_st_title2_label{display:block;}
+.display_st_title3_label{display:block;}
+.display_st_image1_container{display:block;}
+.display_st_image2_container{display:block;}
+.display_st_image3_container{display:block;}
+.display_st_image_src1{display:block;}
+.display_st_image_src2{display:block;}
+.display_st_image_src3{display:block;}
+.display_st_image1_title{display:block;}
+.display_st_image2_title{display:block;}
+.display_st_image3_title{display:block;}
+.display_st_text1_label{display:block;}
+.display_st_text2_label{display:block;}
+.display_st_text3_label{display:block;}
+
+/*******************************************************************************
+ ContentItemTG
+*******************************************************************************/
+
+.display_tg_title_label{display:block;}
+.display_tg_text1_label{display:block;}
+.display_tg_text2_label{display:block;}
+.display_tg_text3_label{display:block;}
+.display_tg_gallery_image_customdata{display:inline;}
+.display_tg_gallery_image_title{display:block;}
+.display_tg_gallery_image_text{display:block;}
+
+/*******************************************************************************
+ ContentItemTI
+*******************************************************************************/
+
+/*Titel*/
+.display_ti_title1_label{display:block;}
+.display_ti_title2_label{display:block;}
+.display_ti_title3_label{display:block;}
+/*Text*/
+.display_ti_text1_label{display:block;}
+.display_ti_text2_label{display:block;}
+.display_ti_text3_label{display:block;}
+/*Bild*/
+.display_ti_image1_container{display:block;}
+.display_ti_image2_container{display:block;}
+.display_ti_image3_container{display:block;}
+.display_ti_image1{display:block;}
+.display_ti_image2{display:block;}
+.display_ti_image3{display:block;}
+/*Bilduntertitel*/
+.display_ti_img1_title{display:block;}
+.display_ti_img2_title{display:block;}
+.display_ti_img3_title{display:block;}
+
+/*******************************************************************************
+ ContentItemTO
+*******************************************************************************/
+
+.display_to_title1_label{display:block;}
+.display_to_text1_label{display:block;}
+.display_to_title2_label{display:block;}
+.display_to_text2_label{display:block;}
+.display_to_title3_label{display:block;}
+.display_to_text3_label{display:block;}
+
+/*******************************************************************************
+ ContentItemTS
+*******************************************************************************/
+
+.display_ts_default_container{display:block;}
+.display_ts_title1_label{display:block;}
+.display_ts_text1_label{display:block;}
+.display_ts_image1_container{display:block;}
+.display_ts_image_src1{display:block;}
+.display_ts_image1_title{display:block;}
+.display_ts_title2_label{display:block;}
+.display_ts_text2_label{display:block;}
+.display_ts_image2_container{display:block;}
+.display_ts_image_src2{display:block;}
+.display_ts_image2_title{display:block;}
+.display_ts_title3_label{display:block;}
+.display_ts_text3_label{display:block;}
+.display_ts_image3_container{display:block;}
+.display_ts_image_src3{display:block;}
+.display_ts_image3_title{display:block;}
+
+.display_ts_block_title{display:block;}
+.display_ts_block_image_container{display:block;}
+.display_ts_block_image_src{display:block;}
+.display_ts_block_image_title{display:block;}
+.display_ts_block_text_label{display:block;}
+
+.display_ts_block_links{display:block;}
+
+/*******************************************************************************
+ ContentItemVA
+*******************************************************************************/
+
+/*Titel / Text / Bild */
+.display_va_title1_label{display:block;}
+.display_va_text1_label{display:block;}
+.display_va_image1{display:block;}
+
+/*******************************************************************************
+ ContentItemVC
+*******************************************************************************/
+
+.display_vc_video1_container{display:block;}
+.display_vc_video2_container{display:block;}
+.display_vc_video3_container{display:block;}
+.display_vc_title1_label{display:block;}
+.display_vc_title2_label{display:block;}
+.display_vc_title3_label{display:block;}
+.display_vc_image1_src{display:block;}
+.display_vc_image2_src{display:block;}
+.display_vc_image3_src{display:block;}
+.display_vc_image4_src{display:block;}
+.display_vc_image1_title{display:block;}
+.display_vc_image2_title{display:block;}
+.display_vc_image3_title{display:block;}
+.display_vc_text1_label{display:block;}
+.display_vc_text2_label{display:block;}
+.display_vc_text3_label{display:block;}
+
+/*******************************************************************************
+ ContentItemVD
+*******************************************************************************/
+
+.display_vd_document_label{display:block;}
+.display_vd_title1_label{display:block;}
+.display_vd_text1_label{display:block;}
+.display_vd_title2_label{display:block;}
+.display_vd_text2_label{display:block;}
+.display_vd_title3_label{display:block;}
+.display_vd_text3_label{display:block;}
+.display_vd_store_file{display:block;}
+
+/*******************************************************************************
+
+ MODULES
+
+*******************************************************************************/
+
+/*******************************************************************************
+ ModuleAttribute
+*******************************************************************************/
+
+.display_at_text{display:block;}
+.display_at_links{display:block;}
+
+/*******************************************************************************
+ ModuleAttributeGlobal
+*******************************************************************************/
+
+.display_ag_text{display:block;}
+.display_ag_images{display:block;}
+.display_ag_content_type{display:block;}
+.display_ag_links{display:block;}
+
+/*******************************************************************************
+ ModuleCustomText
+*******************************************************************************/
+
+/*.display_ct_title{display:block;} */
+.display_ct_text{display:block;}
+/* .display_ct_list_move_button{display:inline;} */
+
+/*******************************************************************************
+ ModuleEmployee
+*******************************************************************************/
+
+.display_ee_extlink{display:block;}
+.display_ee_intlink{display:block;}
+.display_ee_title1{display:block;}
+.display_ee_title2{display:block;}
+.display_ee_title3{display:block;}
+.display_ee_text1{display:block;}
+.display_ee_text2{display:block;}
+.display_ee_text3{display:block;}
+.display_ee_image1_src{display:block;}
+
+/*******************************************************************************
+ ModuleFrontendUserManagement
+*******************************************************************************/
+
+/* Use company text field
+   OR select with frontend user company submodule - do not enable both at once */
+.display_fu_company{display:block;}
+/*.display_fu_company_select{display:block;}*/
+
+/*******************************************************************************
+ ModuleGlobalAreaManagement
+*******************************************************************************/
+
+.display_ga_area_container{display:block;}
+.display_ga_area_link{display:block;}
+.display_ga_area_extlink{display:block;}
+.display_ga_area_title{display:block;}
+.display_ga_area_image_container{display:block;}
+.display_ga_area_image_alt_text{display:block;}
+.display_ga_area_shorttext{display:block;}
+.display_ga_area_actions_label{display:block;}
+.display_ga_area_additionalfunctions_label{display:block;}
+
+.display_ga_area_large_box_action_buttons_container{display:block;}
+.display_ga_area_large_box_position_buttons{display:block;}
+.display_ga_area_large_box_link{display:block;}
+.display_ga_area_large_box_extlink{display:block;}
+.display_ga_area_large_box_title{display:block;}
+.display_ga_area_large_box_image_container{display:block;}
+.display_ga_area_large_box_image_alt_text{display:block;}
+.display_ga_area_large_box_text_label{display:block;}
+
+.display_ga_area_medium_box_link{display:block;}
+.display_ga_area_medium_box_extlink{display:block;}
+.display_ga_area_medium_box_title{display:block;}
+.display_ga_area_medium_box_image_container{display:block;}
+.display_ga_area_medium_box_image_alt_text{display:block;}
+
+.display_ga_area_small_box_link{display:block;}
+.display_ga_area_small_box_extlink{display:block;}
+.display_ga_area_small_box_title{display:block;}
+
+/*******************************************************************************
+ ModuleMediaManagement
+*******************************************************************************/
+
+/*.display_mm_show_always{display:block;}*/
+/*.display_mm_protected{display:block;}*/
+
+/*******************************************************************************
+ ModuleMultimediaLibrary
+*******************************************************************************/
+
+/*Links*/
+.display_ms_link_container{display:block;}
+/*Verknuepfung zu Seiten*/
+.display_ms_show_on_page_container{display:block;}
+/*Titel*/
+.display_ms_title1{display:block;}
+.display_ms_title2{display:block;}
+.display_ms_title3{display:block;}
+/*Text*/
+.display_ms_text1{display:block;}
+.display_ms_text2{display:block;}
+.display_ms_text3{display:block;}
+/*Bild*/
+.display_ms_image2_container{display:block;}
+.display_ms_image3_container{display:block;}
+.display_ms_image4_container{display:block;}
+.display_ms_image5_container{display:block;}
+.display_ms_image6_container{display:block;}
+.display_ms_image1_src{display:block;}
+.display_ms_image2_src{display:block;}
+.display_ms_image3_src{display:block;}
+.display_ms_image4_src{display:block;}
+.display_ms_image5_src{display:block;}
+.display_ms_image6_src{display:block;}
+/*Bild Untertitel*/
+.display_ms_image1_title{display:block;}
+.display_ms_image2_title{display:block;}
+.display_ms_image3_title{display:block;}
+.display_ms_image4_title{display:block;}
+.display_ms_image5_title{display:block;}
+.display_ms_image6_title{display:block;}
+/*randomly show*/
+.display_ms_randomly_show{display:block;}
+/*external link*/
+.display_ms_extlink{display:block;}
+/*content area*/
+.display_ms_ctarea1{display:block;}
+.display_ms_ctarea2{display:block;}
+.display_ms_ctarea3{display:block;}
+/*issuu document upload*/
+.display_ms_issuu_document{display:block;}
+.display_ms_store_file{display:block;}
+/*Video*/
+.display_ms_video1{display:block;}
+/*form attachment */
+.display_ms_form_attachment{display:block;}
+
+/*******************************************************************************
+ ModuleNews
+*******************************************************************************/
+
+.display_field_nw_title{display:block;}
+.display_field_nw_text{display:block;}
+.display_field_nw_end_date_time{display:block;}
+.display_field_nw_start_date_time{display:block;}
+
+/*******************************************************************************
+ ModuleNewsTicker
+*******************************************************************************/
+
+/*.display_nt_title{display:block;}*/
+/*.display_nt_text{display:block;}*/
+
+/*******************************************************************************
+ ModulePopUpManagement
+*******************************************************************************/
+
+.display_pu_link_container{display:block;}
+.display_pu_extlink{display:block;}
+.display_pu_show_on_page_container{display:block;}
+
+.display_pu_title1_label{display:block;}
+.display_pu_text1_label{display:block;}
+.display_pu_image_src1{display:block;}
+
+.display_pu_title2_label{display:block;}
+.display_pu_text2_label{display:block;}
+.display_pu_image_src2{display:block;}
+
+.display_pu_title3_label{display:block;}
+.display_pu_text3_label{display:block;}
+.display_pu_image_src3{display:block;}
+
+/*******************************************************************************
+ ModuleSeoManagement
+*******************************************************************************/
+
+.display_so_management{display:block;}
+.display_so_title{display:block;}
+.display_so_description{display:block;}
+.display_so_keywords{display:block;}
+
+/*******************************************************************************
+ ModuleShopPlusManagement
+*******************************************************************************/
+
+.display_op_order_id{display:block;}
+.display_op_order_date_create{display:block;}
+.display_op_order_date_change{display:block;}
+.display_op_order_total_price{display:block;}
+.display_op_order_total_tax{display:block;}
+.display_op_order_total_price_without_tax{display:block;}
+.display_op_order_status{display:block;}
+.display_op_order_shipping_cost{display:block;}
+.display_op_order_shipping_type{display:block;}
+.display_op_order_payment_cost{display:block;}
+.display_op_order_payment_type{display:block;}
+.display_op_order_sum{display:block;}
+.display_op_order_pdf{display:block;}
+.display_op_order_customer_company{display:block;}
+.display_op_order_customer_position{display:block;}
+.display_op_order_customer_foa{display:block;}
+.display_op_order_customer_title{display:block;}
+.display_op_order_customer_firstname{display:block;}
+.display_op_order_customer_lastname{display:block;}
+.display_op_order_customer_birthday{display:block;}
+.display_op_order_customer_country{display:block;}
+.display_op_order_customer_zip{display:block;}
+.display_op_order_customer_city{display:block;}
+.display_op_order_customer_address{display:block;}
+.display_op_order_customer_phone{display:block;}
+.display_op_order_customer_email{display:block;}
+.display_op_order_customer_text1{display:block;}
+.display_op_order_customer_text2{display:block;}
+.display_op_order_customer_text3{display:block;}
+.display_op_order_customer_text4{display:block;}
+.display_op_order_customer_text5{display:block;}
+.display_op_order_shipping_company{display:block;}
+.display_op_order_shipping_position{display:block;}
+.display_op_order_shipping_foa{display:block;}
+.display_op_order_shipping_title{display:block;}
+.display_op_order_shipping_firstname{display:block;}
+.display_op_order_shipping_lastname{display:block;}
+.display_op_order_shipping_birthday{display:block;}
+.display_op_order_shipping_zip{display:block;}
+.display_op_order_shipping_city{display:block;}
+.display_op_order_shipping_address{display:block;}
+.display_op_order_shipping_phone{display:block;}
+.display_op_order_shipping_email{display:block;}
+.display_op_order_shipping_text1{display:block;}
+.display_op_order_shipping_text2{display:block;}
+.display_op_order_shipping_text3{display:block;}
+.display_op_order_shipping_text4{display:block;}
+.display_op_order_shipping_text5{display:block;}
+.display_op_order_info{display:block;}
+
+/* ShopPlusManagementCartSettings */
+.display_oc_text{display:block;}
+
+/* ShopPlusManagementOption */
+.display_oo_code{display:block;}
+.display_oo_text{display:block;}
+.display_oo_image{display:block;}
+.display_oo_product{display:block;}
+.display_oo_cart{display:block;}
+
+/* ShopPlusManagementPayment */
+.display_oy_text{display:block;}
+
+/* ShopPlusManagementPreferences */
+.display_or_cp_shipping_costs_free{display:block;}
+.display_or_cp_shipping_costs_maximum{display:block;}
+.display_or_cp_shipping_costs_percentage{display:block;}
+
+/*******************************************************************************
+ ModuleSideBox
+*******************************************************************************/
+
+.display_sb_title1{display:block;}
+.display_sb_title2{display:block;}
+/*Text*/
+.display_sb_text1{display:block;}
+/*Bild*/
+.display_sb_image_src1{display:block;}
+.display_sb_image_src2{display:block;}
+/*external link*/
+.display_sb_link_container{display:block;}
+.display_sb_extlink{display:block;}
+/*form attachment */
+.display_sb_form_attachment{display:block;}
+/*list view: assignment information*/
+.display_sb_list_assignment{display:block;}
+
+/*******************************************************************************
+ ModuleSiteindexCompendium
+*******************************************************************************/
+
+/*Startseite allgemein*/
+/* Speichern Button rechts ausblenden */
+.mod_siteindex .ed_sidebar_box .ed_sidebar_box_item_actions {display:block;}
+/*.display_si_container{display:block;}
+.display_si_link_label{display:block;}
+.display_si_extlink_label{display:block;}
+.display_si_title{display:block;}
+.display_si_text1{display:block;}
+.display_si_text2{display:block;}
+.display_si_text3{display:block;}
+.display_si_image1_container{display:block;}
+.display_si_image2_container{display:block;}
+.display_si_image3_container{display:block;}
+.display_si_image_src1{display:block;}
+.display_si_image_src2{display:block;}
+.display_si_image_src3{display:block;}
+.display_si_img1_title{display:block;}
+.display_si_img2_title{display:block;}
+.display_si_img3_title{display:block;}
+.display_si_image1_alt_text{display:none;}
+.display_si_image2_alt_text{display:none;}
+.display_si_image3_alt_text{display:none;}
+.display_si_actions_label{display:block;}*/
+
+/*Starsseite Bereich*/
+/*Bereich allgemein und Bereichs aktionsboxen wenn kein Bild und Alt text vorhanden ist*/
+.display_si_area_container{display:block;}
+.display_si_area_actions_label{display:block;}
+.display_si_area_additionalfunctions_label{display:block;}
+/*Bereich Überschrift*/
+.display_si_area_title{display:block;}
+/* Bereich Link*/
+.display_si_area_link{display:block;}
+.display_si_area_extlink{display:block;}
+/*Bereich Bild und alt-Text Container*/
+.display_si_area_image_container{display:block;}
+/*Bereich Bild*/
+.display_si_area_image_container .display_si_area_image_label{display:block;}
+.display_si_area_image_container .display_si_area_image_src{display:block;}
+.display_si_area_image_container .display_si_area_image1_alt_text{display:none;}
+/*Bereich alt text*/
+.display_si_area_container .display_si_area_text_label b{display:block;}
+.display_si_area_container .display_si_shorttext{display:block;}
+/*Icons zum Verschieben der Position*/
+/*.display_si_area_move_position{display:inline-block !important;}*/
+/*Bereich allgemein und Bereichs aktionsboxen wenn kein Bild und Alt text vorhanden ist*/
+/*Bereich 1
+#siarea_1 .display_si_area_actions_label{display:block;}
+#siarea_1 .display_si_area_additionalfunctions_label{display:block;}*/
+/*Bereich 1 Überschrift
+#siarea_1 .display_si_area_title{display:block;}*/
+/*Bereich 1 Bild und alt-Text Container
+#siarea_1 .display_si_area_image_container{display:block;}*/
+/*Bereich 1 Bild
+#siarea_1 .display_si_area_image_container .display_si_area_image_label{display:block;}
+ #siarea_1 .display_si_area_image_container .display_si_area_image_src{display:block;}*/
+/*Bereich 1 alt text
+#siarea_1 .display_si_area_image_container .display_si_area_text_label b{display:block;}
+#siarea_1 .display_si_area_image_container .display_si_shorttext{display:block;}*/
+
+/*LARGE BOX Allgmein*/
+.display_si_area_large_box_link{display:block;}
+.display_si_area_large_box_extlink{display:block;}
+.display_si_area_large_box_title1{display:block;}
+.display_si_area_large_box_image1{display:block;}
+.display_si_area_large_box_image1_alt_text{display:none;}
+.display_si_area_large_box_text1_label{display:block;}
+
+.display_si_area_large_box_title2{display:block;}
+.display_si_area_large_box_image2{display:block;}
+.display_si_area_large_box_image2_alt_text{display:none;}
+.display_si_area_large_box_text2_label{display:block;}
+
+.display_si_area_large_box_title3{display:block;}
+.display_si_area_large_box_image3{display:block;}
+.display_si_area_large_box_image3_alt_text{display:none;}
+.display_si_area_large_box_text3_label{display:block;}
+
+/*Startseiten Box verschieben*/
+.display_si_area_large_box_action_buttons_container{display:block; }
+.display_si_area_large_box_position_buttons{display:block; }
+/*Bereich 1*/
+/*Box 1 Link
+#siarea_box_11 .display_si_area_large_box_link{display:block;}*/
+/*Box 1 Überschrift
+#siarea_box_11 .display_si_area_large_box_title{display:block;}*/
+/*Box 1 Bild
+#siarea_box_11 .display_si_area_large_box_image{} */
+/*Box 1 Alt Text
+#siarea_box_11 .display_si_area_large_box_text_label{display:block;}
+#siarea_box_11 .display_si_area_large_box_shorttext{display:block;}*/
+
+/*MEDIUM BOX*/
+/*MEDIUM BOX allgmein*/
+.display_si_area_medium_box_link{display:block;}
+.display_si_area_medium_box_extlink{display:block;}
+.display_si_area_medium_box_title1{display:block;}
+.display_si_area_medium_box_image1{display:block;}
+.display_si_area_medium_box_image1_alt_text{display:none;}
+
+/*Box 1 Link
+#siarea_box_11 .display_si_area_medium_box_link{display:block;}*/
+/*Box 1 Überschrift
+#siarea_box_11 .display_si_area_medium_box_title{display:block;}*/
+/*Box 1 Bild
+#siarea_box_11 .display_si_area_medium_box_image{display:block;}*/
+
+/*SMALL BOX*/
+/*SMALL BOX allgmein*/
+.display_si_area_small_box_link{display:block;}
+.display_si_area_small_box_extlink{display:block;}
+.display_si_area_small_box_title1{display:block;}
+/*Bereich 1*/
+/*Box 1 Link
+#siarea_box_11 display_si_area_small_box_link{display:block;}*/
+/*Box 1 Überschrift
+#siarea_box_11 display_si_area_small_box_title{display:block;}*/
+
+
+#si_area_1 .display_si_area_container {display: none;}
+#si_area_1 .display_si_area_actions_label {display: none;}
+#si_area_1 .display_si_area_large_box_title2 {display: none;}
+#si_area_1 .display_si_area_large_box_text2_label {display: none;}
+#si_area_1 .display_si_area_large_box_image2 {display: none;}
+#si_area_1 .display_si_area_large_box_title3 {display: none;}
+#si_area_1 .display_si_area_large_box_text3_label {display: none;}
+#si_area_1 .display_si_area_large_box_image3 {display: none;}
+
+#si_area_2 .display_si_area_image_container {display: none;}
+
+#si_area_3 .display_si_area_image_container {display: none;}
+
+
+/*******************************************************************************
+ ModuleSiteindexCompendiumMobile
+*******************************************************************************/
+
+/*Startseite allgemein*/
+.display_si_mobile_link_label{display:block; }
+.display_si_mobile_extlink_label{display:block; }
+.display_si_mobile_title{display:block; }
+.display_si_mobile_text1{display:block; }
+.display_si_mobile_text2{display:block; }
+.display_si_mobile_text3{display:block; }
+.display_si_mobile_image1_container{display:block;}
+.display_si_mobile_image2_container{display:block;}
+.display_si_mobile_image3_container{display:block;}
+.display_si_mobile_image_src1{display:block; }
+.display_si_mobile_image_src2{display:block; }
+.display_si_mobile_image_src3{display:block; }
+.display_si_mobile_img1_title{display:block; }
+.display_si_mobile_img2_title{display:block; }
+.display_si_mobile_img3_title{display:block; }
+.display_si_mobile_actions_label{display:block; }
+
+/*Starsseite Bereich*/
+/*Bereich allgemein und Bereichs aktionsboxen wenn kein Bild und Alt text vorhanden ist*/
+.display_si_mobile_area_container{display:block;}
+.display_si_mobile_area_actions_label{display:block;}
+.display_si_mobile_area_additionalfunctions_label{display:block;}
+.display_si_mobile_area_title{display:block;}
+.display_si_mobile_area_link{display:block;}
+.display_si_mobile_area_extlink{display:block;}
+.display_si_mobile_area_image_container{display:block;}
+.display_si_mobile_area_image_container .display_si_mobile_area_image_label{display:block;}
+.display_si_mobile_area_image_container .display_si_mobile_area_image_src{display:block;}
+.display_si_mobile_area_container .display_si_mobile_area_text_label b{display:block;}
+.display_si_mobile_area_container .display_si_mobile_shorttext{display:block;}
+/*Icons zum Verschieben der Position*/
+/*.display_si_mobile_area_move_position{display:block;}*/
+
+/*LARGE BOX Allgmein*/
+.display_si_mobile_area_large_box_link{display:block;}
+.display_si_mobile_area_large_box_extlink{display:block;}
+.display_si_mobile_area_large_box_title1{display:block;}
+.display_si_mobile_area_large_box_image1{display:block;}
+.display_si_mobile_area_large_box_text1_label{display:block;}
+
+.display_si_mobile_area_large_box_title2{display:block;}
+.display_si_mobile_area_large_box_image2{display:block;}
+.display_si_mobile_area_large_box_text2_label{display:block;}
+
+.display_si_mobile_area_large_box_title3{display:block;}
+.display_si_mobile_area_large_box_image3{display:block;}
+.display_si_mobile_area_large_box_text3_label{display:block;}
+
+/*Startseiten Box verschieben*/
+.display_si_mobile_area_large_box_action_buttons_container{display:block; }
+.display_si_mobile_area_large_box_position_buttons{display:block; }
+/*Bereich 1*/
+/*Box 1 Link
+#siarea_box_11 .display_si_mobile_area_large_box_link{display:block;}*/
+/*Box 1 Überschrift
+#siarea_box_11 .display_si_mobile_area_large_box_title1{display:block;}*/
+/*Box 1 Bild und alt Text container
+#siarea_box_11 .display_si_mobile_area_large_box_image1_container{display:block;}*/
+/*Box 1 Bild
+#siarea_box_11 .display_si_mobile_area_large_box_image1_label{display:block;}
+#siarea_box_11 .display_si_mobile_area_large_box_image1_src{} */
+/*Box 1 Alt Text
+#siarea_box_11 .display_si_mobile_area_large_box_text1_label{display:block;}
+
+
+
+/*MEDIUM BOX*/
+.display_si_mobile_area_medium_box_link{display:block;}
+.display_si_mobile_area_medium_box_extlink{display:block;}
+.display_si_mobile_area_medium_box_title1{display:block;}
+.display_si_mobile_area_medium_box_image1{display:block;}
+
+/*SMALL BOX*/
+.display_si_mobile_area_small_box_link{display:block;}
+.display_si_mobile_area_small_box_extlink{display:block;}
+.display_si_mobile_area_small_box_title1{display:block;}
+
+/*******************************************************************************
+ ModuleTag
+*******************************************************************************/
+
+.display_ta_tag_global_needs_image{display:block;}
+
+/*******************************************************************************
+ ModuleTagcloud
+*******************************************************************************/
+
+.display_tc_intlink{display:block;}
+.display_tc_extlink{display:block;}
+
+/*******************************************************************************
+
+ PROJECTS
+
+ Project specific default values from here (only in custom_config.css):
+
+*******************************************************************************/

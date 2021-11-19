@@ -1,0 +1,53 @@
+/* ==========================================================================
+   ModuleRecentDownloads
+   ========================================================================== */
+
+.mod_recentdownloads {
+  margin: 35px 0px;
+
+  .mod_recentdownload_main {
+    padding: 25px 20px;
+    border: solid 2px @main-color;
+    text-align: left;
+
+    .mod_recentdownloads_label {
+      color: @main-color;
+      font-weight: 600;
+      font-size: 1.3rem;
+      margin: 0px 0px 15px;
+      text-align: left;
+    }
+
+    .mod_recentdownload_content {
+      .mod_recentdownload_items {
+        margin-bottom: 8px;
+
+        a {
+          &.page_label {
+            color: @color-grey;
+            display: block;
+            margin-left: 23px;
+            font-size: 0.8rem;
+
+            &:hover {
+              color: @link-color-hover;
+            }
+          }
+
+          &.item_label {
+            font-size: 1.05rem;
+            font-style: normal;
+            line-height: 1rem;
+            padding: 0 0 4px 7px;
+            display: block;
+
+            &:hover {
+              background-position: 0 -37px;
+              color: @link-color-hover;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,59 @@
+/* ==========================================================================
+   ContentitemQP
+   ========================================================================== */
+
+.ct-qp {
+
+}
+
+.qp-main {
+  margin-bottom: 50px;
+}
+
+.qp-statement {
+  margin-bottom: 35px;
+  padding-bottom: 30px;
+  border-bottom: solid 1px @color-grey-light;
+
+  &__images-small {
+    margin-top: 10px;
+
+    > .qp-statement__images-small-inner {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__top-link {
+    font-size: 0.9rem;
+    color: @link-color;
+    float: right;
+
+    &:hover {
+      color: @link-color-hover;
+    }
+  }
+}
+
+.qp-anchor-container {
+  background-color: @main-color;
+  margin-bottom: 10px;
+}
+
+.qp-statement-anchor {
+  padding: 7px 12px;
+  float: left;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  &__link {
+    color: #fff !important;
+  }
+
+  &:hover {
+    background-color: @link-color-hover;
+  }
+
+  @media @sm-down {
+    float: none;
+  }
+}

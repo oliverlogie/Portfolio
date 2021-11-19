@@ -1,0 +1,42 @@
+/**
+ * footernavigation.less
+ *
+ * Author: Q2E GmbH
+ * Copyright: (c) 2018 Q2E GmbH office@q2e.at
+ */
+
+/* ==========================================================================
+   Footer Navigation
+   ========================================================================== */
+
+.footer-navigation-level0 {
+  padding: 0px;
+  margin: 0px;
+  position: absolute;
+  right: 0px;
+
+  li {
+    list-style:  none;
+    float: left;
+    font-weight: bold;
+
+    a {
+      color: #fff;
+      padding: 5px 10px;
+
+      &:hover, &:active, &.nl0_active {
+        color: @link-color-hover;
+      }
+    }
+  }
+
+  @media @sm-down {
+    position: relative;
+    padding-top: 20px;
+
+    li {
+      float: none;
+      text-align: right;
+    }
+  }
+}

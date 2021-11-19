@@ -1,0 +1,49 @@
+/* ==========================================================================
+   ModuleNewsTicker
+   ========================================================================== */
+
+.mod_newsticker {
+  margin: 35px 0px;
+
+  .mod_newsticker_content {
+    background: #fff;
+    text-align: center;
+
+    .mod_newsticker_title {
+      color: @main-color;
+      font-weight: 600;
+      font-size: 1.55rem;
+      margin: 0px 0px 18px;
+      text-align: center;
+    }
+
+    .mod_newsticker_news {
+      background-color: @color-grey-light;
+      margin-bottom: 10px;
+      padding: 15px;
+
+      .mod_newsticker_news_date, .mod_newsticker_news_category {
+        font-style: italic;
+        font-size: 0.9rem;
+        line-height: 1.15rem;
+        color: @color-grey;
+      }
+
+      .mod_newsticker_news_title {
+        font-weight: bold;
+
+        &:hover {
+          color: @link-color-hover;
+          cursor: pointer;
+        }
+      }
+
+      a {
+        &.more-link {
+          float: right;
+        }
+      }
+
+    }
+  }
+}

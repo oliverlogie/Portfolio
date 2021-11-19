@@ -1,0 +1,54 @@
+/* ==========================================================================
+   ContentitemRS
+   ========================================================================== */
+
+.ct_rs {
+  .rs_main_content {
+    margin-bottom: 20px;
+
+    .ct_img {
+      .z-img-gap();
+    }
+
+    h1 {
+      margin-top: 0;
+    }
+  }
+
+  #c_rs_reseller_part {
+
+    table {
+      select {
+        width: 100%;
+      }
+    }
+
+    .reseller_list {
+
+      .reseller_list_item {
+        padding: 0 0 10px;
+        border-bottom: 1px dotted #ccc;
+
+        a {
+          color: @main-color;
+
+          &:hover {
+            color: #888;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+
+    .rs_main_content {
+      margin-bottom: 40px;
+
+      .ct_img {
+        margin-bottom: 20px;
+      }
+
+    }
+  }
+}

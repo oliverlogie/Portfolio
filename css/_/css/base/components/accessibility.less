@@ -1,0 +1,52 @@
+/**
+ * accessibility.less
+ *
+ * Author: Q2E GmbH
+ * Copyright: (c) 2018 Q2E GmbH office@q2e.at
+ */
+
+ /* ========================================================================== */
+/* Sprungmarken
+/* ========================================================================== */
+
+
+.c-jump {
+  z-index: 102;
+  position: absolute;
+  top: 0px;
+
+  &__container {
+    background-color: @main-color;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  &__link {
+    padding: 5px 10px;
+    display: inline-block;
+  }
+
+  &__link:link, &__link:visited {
+    .accessible-hidden;
+    color: #fff;
+    text-decoration: underline;
+  }
+
+  &__link:hover, &__link:focus {
+    .accessible-visible;
+    border: dashed 1px @body-color;
+    display: inline-block;
+    outline: 0;
+  }
+
+  &__item {
+    float: left;
+  }
+
+  h4 {
+    margin: 0px;
+    margin-bottom: 5px;
+    margin-left: 10px;
+  }
+}

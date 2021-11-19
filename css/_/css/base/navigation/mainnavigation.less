@@ -1,0 +1,42 @@
+/**
+ * mainnavigation.less
+ *
+ * Author: Q2E GmbH
+ * Copyright: (c) 2018 Q2E GmbH office@q2e.at
+ */
+
+/* ==========================================================================
+   Navigation
+   ========================================================================== */
+
+.c-nav--level0 {
+  .c-nav__list-level0-item--below, .c-nav__list-level0-item--active {
+    .c-nav__list-level0-link {
+      color: @nav-level0-font-color-active;
+    }
+  }
+}
+
+.c-nav--level1 {
+  @nav-side-distance: 10px;
+
+  background-color: @nav-level1-background-color;
+  text-align: right;
+
+  // level 1
+  .c-nav__list-level1-item {
+    float: left;
+  }
+}
+
+.c-nav--level2 {
+  @nav-side-distance: 10px;
+
+  background-color: @nav-level2-background-color;
+  text-align: right;
+
+  // level 1
+  .c-nav__list-level1-item {
+    float: left;
+  }
+}

@@ -1,0 +1,51 @@
+/* ==========================================================================
+   ContentItemIB
+   ========================================================================== */
+
+.ct_ib {
+
+}
+
+.ib-main {
+  margin-bottom: 50px;
+  font-size: 1.1rem;
+}
+
+.ib-box {
+  margin-bottom: 40px;
+
+  &__text {
+    text-align: center;
+    min-height: 160px;
+    margin-top: 10px;
+  }
+
+  &__text-link {
+    display: block;
+  }
+
+  &__link {
+    margin-top: 15px;
+    font-size: 1.1rem;
+    display: block;
+
+    .more-link {
+      display: inline-block;
+      margin-top: 5px;
+      color: @link-color;
+      font-weight: @bold;
+    }
+  }
+
+  &:hover {
+    .ib-box__img {
+      opacity: 0.85;
+    }
+
+    .ib-box__headline,
+    .more-link,
+    .ib-box__text-link {
+      color: @link-color-hover;
+    }
+  }
+}

@@ -1,0 +1,78 @@
+/* ==========================================================================
+   ContentitemAR
+   ========================================================================== */
+
+.ct_ar {
+
+}
+
+.ar-main {
+  margin-bottom: 40px;
+}
+
+.ar-result {
+  margin-bottom: 20px;
+
+  &__text {
+    font-style: italic;
+    color: #999;
+
+    &:hover{
+      color: @main-color;
+    }
+  }
+
+  &__link {
+    color: @main-color;
+    margin-top: 5px;
+  }
+}
+
+.metainfo {
+  color: @color-grey;
+  font-size: 0.9rem;
+  line-height: 1.1rem;
+  margin-bottom: 20px;
+  display: inline-block;
+}
+
+/* Archiv Navigation */
+.nav-archive {
+  background: #fff;
+  margin: 20px auto;
+
+  &__head {
+    font-size: 1.1rem;
+    color: #fff;
+    margin-bottom: 5px;
+    padding: 10px 20px 10px 20px;
+    background: @main-color url("@{img-url}rbox_head_bg.png") right 0 no-repeat;
+  }
+
+  &__content {
+    padding: 20px 20px 20px 20px;
+    background-color: @color-grey-light;
+  }
+
+  &__item {
+    padding: 2px 0;
+    display: block;
+    color: @body-color;
+
+    &:visited {
+      color: @body-color;
+
+      &:hover {
+        color: @main-color;
+      }
+    }
+
+    &--active, &--active:visited {
+      color: @main-color;
+    }
+
+    &:last-child {
+      font-weight: bold;
+    }
+  }
+}

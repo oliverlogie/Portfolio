@@ -1,0 +1,81 @@
+/**
+ * sitemapnav.less
+ *
+ * Author: Q2E GmbH
+ * Copyright: (c) 2018 Q2E GmbH office@q2e.at
+ */
+
+/* ==========================================================================
+   SITEMAP NAVIGATION
+   ========================================================================== */
+
+.c-nav--sitemap {
+  @nav-side-distance: 10px;
+
+  // show on hover functionality for all levels
+  li:hover, li.menu-expanded {
+
+    &> ul {
+      display: block;
+    }
+
+  }
+
+  .c-nav__list-level0-link {
+    &.is-active {
+      color: @nav-level0-font-color-active;
+    }
+  }
+
+  // level 1
+  .c-nav__list-level1 {
+    .box-shadow;
+    background-color: @nav-level1-background-color;
+    position: absolute;
+    display: none;
+    z-index: 2;
+    top: 80%;
+    left: 9px;
+    min-width: 220px;
+    text-align: left;
+  }
+
+  .c-nav__list-level1-item {
+    display: block;
+    width: 100%;
+  }
+
+  .c-nav__list-level1-link {
+    display: block;
+
+    &.is-active {
+      color: @nav-level1-font-color-active;
+    }
+  }
+
+  // level 2
+  .c-nav__list-level2 {
+    .box-shadow;
+    background-color: @nav-level2-background-color;
+    position: absolute;
+    display: none;
+    z-index: 2;
+    top: -5px;
+    left: 100%;
+    min-width: 220px;
+    text-align: left;
+  }
+
+  .c-nav__list-level2-item {
+    display: block;
+    width: 100%;
+  }
+
+  .c-nav__list-level2-link {
+    display: inline-block;
+
+    &.is-active {
+      color: @nav-level2-font-color-active;
+    }
+  }
+}

@@ -1,0 +1,103 @@
+/* ==========================================================================
+   ModuleCPCart
+   ========================================================================== */
+
+.mod_cpcart {
+  padding: 15px;
+  background: #f0f0f0;
+  margin-bottom: 20px;
+
+  h2 {
+    margin-top: 0;
+    font-size: 1.2rem;
+  }
+
+  .mod_cpcart_price {
+    border-bottom: 1px solid #ccc;
+  }
+
+  .mod_cpcart_pricetxt {
+    border-bottom: 1px solid;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+
+  .cp_remove_link {
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+  }
+
+  .mod_cpcart_sum {
+    margin-bottom: 10px;
+
+    .mod_cpcart_sum_price {
+      color: @main-color;
+      font-size: 1.2rem;
+    }
+  }
+
+  .mod_cpcart_quantity {
+    line-height: 2rem;
+  }
+
+  .mod_cpcart_footer {
+    a {
+      &:hover {
+        color: @link-color-hover;
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 800px) {
+
+  /* Force table to not be like tables anymore */
+  #no-more-tables table,
+  #no-more-tables thead,
+  #no-more-tables tbody,
+  #no-more-tables th,
+  #no-more-tables td,
+  #no-more-tables tr {
+    display: block;
+  }
+
+  /* Hide table headers (but not display: none;, for accessibility) */
+  #no-more-tables thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  #no-more-tables tr { border: 1px solid #ccc; }
+
+  #no-more-tables td {
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+    white-space: normal;
+    width: 50%;
+    text-align: left !important;
+  }
+
+  #no-more-tables td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 0;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    text-align:left;
+    font-weight: bold;
+  }
+
+  /*
+  Label the data
+  */
+  #no-more-tables td:before { content: attr(data-title); }
+}

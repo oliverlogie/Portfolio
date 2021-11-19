@@ -1,0 +1,58 @@
+/* ==========================================================================
+   NestedNavLevel3
+   ========================================================================== */
+
+.mod_nnav_3 {
+  ul {
+    padding: 0 0 0 22px;
+    margin: 0.5rem 0;
+  }
+
+  .backlink {
+    margin-bottom: 15px;
+  }
+
+  .parent_label {
+    font-weight: bold;
+    padding-left: 20px;
+  }
+
+  .mod_nnav_items_1 {
+    padding: 0 0 0 22px;
+
+    li {
+      a {
+        &.mod_nnlink_1_active, &.mod_nnlink_1_below, &:hover {
+          color: @link-color-hover;
+        }
+      }
+    }
+
+    .mod_nnav_items_2 {
+      padding: 0 0 0 14px;
+
+      li {
+        list-style: none;
+        font-size: 0.8rem;
+
+        a {
+          &.mod_nnlink_2_active, &.mod_nnlink_2_below, &:hover {
+            color: @main-color;
+          }
+        }
+      }
+    }
+
+    .mod_nnav_items_3 {
+      li {
+        list-style: none;
+
+        a {
+          &.mod_nnlink_3_active, &.mod_nnlink_3_below, &:hover {
+            color: @main-color;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,93 @@
+/* ==========================================================================
+   ContentitemTG
+   ========================================================================== */
+
+.ct-tg {
+
+}
+
+.tg-main {
+  margin-bottom: 40px;
+}
+
+.tg-main-box {
+  margin-bottom: 30px;
+}
+
+.tg-boxes-container {
+  padding-right: 3px;
+  margin-top: 20px;
+
+  @media @xl-down {
+    padding-right: 12px;
+  }
+
+  @media @lg-down {
+    padding-right: 23px;
+  }
+}
+
+.tg-box {
+  cursor: pointer;
+  float: left;
+  margin-bottom: 15px;
+  position: relative;
+  text-align: center;
+  background-color: #fff;
+  border: 1px solid #ddd;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+
+  &:nth-child(3n+4) {
+    margin-left: 0px;
+  }
+
+  @media @xl-up {
+    &__img {
+      max-height: 165px;
+    }
+  }
+
+  @media @xl-down {
+    &__img {
+      max-height: 144px;
+    }
+  }
+
+  @media @lg-down {
+    &__img {
+      max-height: 180px;
+    }
+  }
+
+  @media @md-down {
+    margin-right: 10px;
+  }
+
+  @media @sm-down {
+    width: 100%;
+    margin: 0 0 10px 0;
+
+    &__img {
+      max-height: none;
+    }
+  }
+
+  &__content {
+    .transparent-background(@opacity: 0.8, @color: @color-grey-light);
+    bottom: 4px;
+    left: 0;
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    padding: 5px;
+  }
+
+  &__text {
+    display: none;
+  }
+}

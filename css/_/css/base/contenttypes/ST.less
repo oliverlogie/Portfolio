@@ -1,0 +1,45 @@
+/* ==========================================================================
+   ContentitemST
+   ========================================================================== */
+
+.ct_st {
+  .st_main_content {
+    margin-bottom: 30px;
+
+    .ct_img {
+      .z-img-gap();
+    }
+  }
+
+  ul {
+    padding: 0 0 0 22px;
+    margin: 0.4em 0;
+    font-size: 1rem;
+
+    ul {
+    padding: 0 0 0 10px;
+
+      li {
+        &.st_item_1 {
+          font-size: 0.9rem;
+        }
+
+        &.st_item_2 {
+          font-size: 0.9rem;
+        }
+
+        &.st_item_3 {
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    .st_main_content {
+      .ct_img {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}

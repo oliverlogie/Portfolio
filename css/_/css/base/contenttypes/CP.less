@@ -1,0 +1,71 @@
+/* ==========================================================================
+   ContentItemCP
+   ========================================================================== */
+
+.ct_cp {
+  .button {
+    margin-left: 30%;
+    margin-top: 15px;
+  }
+
+  table {
+    .align_r {
+      text-align: right;
+    }
+
+    .sum_row {
+      color: @main-color;
+      font-size: 1.2rem;
+    }
+  }
+
+  .cp_cart_content {
+    .payment_item_container {
+      float: left;
+      width: 47%;
+      margin-right: 3%;
+    }
+
+    th {
+      text-align: left;
+      font-size: 1.2rem;
+      padding: 0 15px 5px 0;
+    }
+
+    td {
+      img {
+        max-width: 10% !important;
+      }
+    }
+
+    .cp_remove_link {
+      width: 15px;
+      height: 15px;
+      display: inline-block;
+    }
+
+  }
+
+  .ct_img {
+    display: inline-block;
+  }
+
+  .cp_delivery_info_box {
+    #cp_shipment_modes {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    table {
+      width: 100%;
+    }
+
+    .cp_cart_content {
+      .payment_item_container {
+        float: none;
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+/**
+ * images.less
+ *
+ * Author: Q2E GmbH
+ * Copyright: (c) 2018 Q2E GmbH office@q2e.at
+ */
+
+ /* ==========================================================================
+   Images
+   ========================================================================== */
+
+.c-img-zoom {
+  position: relative;
+
+  &__link {
+    background: url("@{img-url}blank.gif");
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+
+    img {
+      display: none;
+      left: 5px;
+      position: absolute;
+      top: 5px;
+    }
+
+    &:hover img {
+      display: block;
+    }
+  }
+}
+
+.c-img-caption {
+  font-size: 0.9rem;
+  color: #999;
+
+  img {
+    padding-bottom: 5px;
+  }
+
+  a {
+    display: block;
+  }
+
+  @media @sm-down {
+    text-align: center;
+  }
+}

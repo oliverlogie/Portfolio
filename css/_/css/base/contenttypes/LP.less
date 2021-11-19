@@ -1,0 +1,51 @@
+
+/* ==========================================================================
+   ContentitemLP
+   ========================================================================== */
+
+/*Carousel*/
+.parent-ct-78 {
+  .lp_nav {
+    margin-bottom: 10px;
+
+    .slider_content {
+    background-color: @color-grey-light;
+
+      .bx-wrapper {
+        margin-bottom: 0;
+        background-color: @color-grey-light;
+
+        .bx-viewport {
+          padding: 15px 0 10px;
+          background-color: transparent;
+
+          div.lplevel_item_text {
+            a {
+              font-size: 0.95rem;
+              line-height: 1.1rem;
+              padding-top: 5px;
+              display: inline-block;
+
+              &.lp_text_link_active {
+                color: @main-color;
+              }
+            }
+          }
+        }
+
+        .bx-controls {
+          .bx-pager {
+            display: none !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+//Umbruch des Sliders auf 100%, Pfeile weg
+@media (max-width: 480px) {
+  .bx-controls-direction {
+    .hidden;
+  }
+}

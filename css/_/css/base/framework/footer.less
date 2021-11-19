@@ -1,0 +1,38 @@
+/**
+ * footer.less
+ *
+ * Author: Q2E GmbH
+ * Copyright: (c) 2018 Q2E GmbH office@q2e.at
+ */
+
+ /* ==========================================================================
+   Footer Bereich
+   ========================================================================== */
+
+.f-footer {
+  background-color: @main-color;
+  margin-top: 50px;
+  padding: 70px 0px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #fff;
+
+  @media @md-down {
+    padding: 30px 0px;
+    font-size: 1.1rem;
+  }
+
+  a, a.nlink3 {
+    color: #fff;
+
+    &:hover {
+      color: @link-color-hover;
+    }
+  }
+}
+
+.ct-0 {
+  .f-footer {
+    margin-top: 0px;
+  }
+}

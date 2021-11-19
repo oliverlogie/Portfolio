@@ -1,0 +1,53 @@
+/* ==========================================================================
+   ModuleSidebox
+   ========================================================================== */
+
+.mod-sb {
+  margin: 20px 0px;
+}
+
+.mod-sb-small {
+  margin: 20px 0px 5px 0px;
+  padding: 0px;
+  position: relative;
+
+  &__content {
+    background-color: @main-color;
+    margin-bottom: 5px;
+    padding: 15px 15px 25px;
+    color: #fff;
+
+    a {
+      color: #fff;
+      display: inline-block;
+    }
+
+  }
+
+  &__link {
+    display: block;
+    text-align: center;
+  }
+
+  &:hover {
+
+    img {
+      opacity: 0.8;
+    }
+
+    .mod-sb-small__content {
+      background-color: @link-color-hover;
+    }
+  }
+
+}
+
+.mod-sb-fullsize {
+  margin: 20px 0px 5px 0px;
+  text-align: center;
+
+  &__link {
+    display: block;
+    text-align: center;
+  }
+}

@@ -1,0 +1,190 @@
+/**
+ * navigation.less
+ *
+ * Author: Q2E GmbH
+ * Copyright: (c) 2018 Q2E GmbH office@q2e.at
+ */
+
+/* ==========================================================================
+   Allgemeine Styles für Navigationen
+   ========================================================================== */
+
+.nav-desktop {
+  &:active, &:focus {
+    border: dashed 1px @body-color;
+    outline: 0;
+  }
+}
+
+.backlink {
+  .c-btn;
+  padding: 7px 12px;
+  margin-bottom: 15px;
+  display: inline-block;
+  font-size: 0.9rem;
+
+  a.navfont {
+    color: #fff;
+  }
+}
+
+.c-nav {
+  @nav-side-distance: 10px;
+
+  font-size: 1.1rem;
+  font-weight: @bold;
+  line-height: 1.3rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+
+  @media @xl-down {
+    font-size: 0.8rem;
+  }
+
+  // show on hover functionality for all levels
+  li:hover, li.menu-expanded {
+    outline: 0;
+
+    .c-nav__list-level0-link {
+      color: @nav-level0-font-color-active;
+    }
+  }
+
+  li:focus {
+    outline: 0;
+
+    .c-nav__list-level0-link {
+      color: @nav-level0-font-color-active;
+    }
+  }
+
+  // level 0
+  &__list-level0 {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: stretch;
+  }
+
+  &__list-level0-item {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    color: @nav-level0-font-color;
+    padding: 30px 0px;
+    margin: 0px @nav-side-distance;
+    display: flex;
+    align-items: center;
+  }
+
+  &__list-level0-link {
+    padding: 0px 9px;
+    display: inline-block;
+    color: @nav-level0-font-color;
+    position: relative;
+    white-space: nowrap;
+
+    &:focus {
+      outline: 0;
+    }
+  }
+
+  // level 1
+  .c-nav__list-level1 {
+    margin: 0;
+    padding: 15px 0px;
+    font-size: 1rem;
+    line-height: 1.2;
+    list-style: none;
+    display: inline-block;
+    font-weight: @regular;
+    text-transform: none;
+  }
+
+  .c-nav__list-level1-item {
+    color: @nav-level1-font-color;
+    position: relative;
+    float: left;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: @nav-level1-font-color-active;
+      outline: none;
+    }
+  }
+
+  .c-nav__list-level1-link {
+    padding: 8px @nav-side-distance;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: @nav-level1-font-color-active;
+    }
+
+    &:focus {
+      border: dotted 1px #000;
+      outline: 0;
+    }
+  }
+
+  // level 2
+  .c-nav__list-level2 {
+    margin: 0;
+    padding: 15px 0px;
+    font-size: 0.9rem;
+    line-height: 1.2;
+    list-style: none;
+    display: inline-block;
+    font-weight: @regular;
+    text-transform: none;
+  }
+
+  .c-nav__list-level2-item {
+    color: @nav-level2-font-color;
+    position: relative;
+    float: left;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: @nav-level2-font-color-active;
+      outline: none;
+    }
+  }
+
+  .c-nav__list-level2-link {
+    padding: 8px @nav-side-distance;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: @nav-level2-font-color-active;
+    }
+  }
+
+}
+
+// extend sub menu items and toggles (not available from Bootstrap)
+
+.dropdown-submenu {
+  position: relative;
+}
+
+.dropdown-submenu>a:after {
+  content: "\f0d7";
+  border: none;
+  font-family: 'FontAwesome';
+  position: relative;
+  top: 4px;
+}
+
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: 0px;
+  margin-left: 0px;
+}

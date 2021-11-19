@@ -1,0 +1,52 @@
+/* ==========================================================================
+   ModuleDownloadTicker
+   ========================================================================== */
+
+.mod_downloadticker {
+  margin: 35px 0px;
+
+  .mod_downloadticker_topdl {
+    border: solid 2px @main-color;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .mod_downloadticker_recentdl {
+    border: solid 2px @main-color;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    color: @main-color;
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin: 0px 0px 15px;
+    text-align: left;
+  }
+
+  a {
+    &.mod_downloadticker_link {
+      display: block;
+      font-size: 1rem;
+      line-height: 1.1rem;
+      padding: 0 0 6px 6px;
+      margin-bottom: 5px;
+
+      &:hover {
+        color: @link-color-hover;
+      }
+    }
+
+    &.mod_downloadticker_page_link {
+      display: block;
+      font-size: 0.9rem;
+      margin-left: 24px;
+      color: @color-grey;
+
+      &:hover {
+        color: @link-color-hover;
+      }
+    }
+  }
+}

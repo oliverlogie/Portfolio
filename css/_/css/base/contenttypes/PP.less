@@ -1,0 +1,45 @@
+/* ==========================================================================
+   ContentItemPP
+   ========================================================================== */
+
+.ct_pp {
+  .pp_main_content {
+    margin-bottom: 20px;
+
+    .ct_img {
+      .z-img-gap();
+    }
+
+    #c_pp_price, .c_pp_currency {
+      font-size: 1.5rem;
+      color: @main-color;
+    }
+  }
+
+  .pp_detail_img {
+    .ct_img {
+      float: left;
+      margin-right: 18px;
+    }
+  }
+
+  table {
+    margin-bottom: 20px;
+
+    .pp_change_product {
+      cursor: pointer;
+    }
+  }
+
+  .pp_box {
+    .pp_box_main_content {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .ct_img {
+      margin-bottom: 20px;
+    }
+  }
+}

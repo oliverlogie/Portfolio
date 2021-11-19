@@ -1,0 +1,51 @@
+/* ==========================================================================
+   ModuleRecentContent
+   ========================================================================== */
+
+.mod_recentcontent {
+  margin: 35px 0px;
+
+  .mod_recentcontent_label {
+    color: @main-color;
+    font-weight: 600;
+    font-size: 1.55rem;
+    margin: 0px 0px 18px;
+    text-align: center;
+  }
+
+  .mod_recentcontent_main {
+    background: #fff;
+    text-align: center;
+
+    .mod_recentcontent_item {
+      margin-bottom: 15px;
+      background-color: @color-grey-light;
+
+      h4 {
+        font-size: 1.1em;
+        display: block;
+        margin: 5px;
+      }
+
+      .mod_recentcontent_shorttext {
+        padding: 10px;
+
+        a {
+          color: @body-color;
+
+          &:hover {
+            color: @link-color-hover;
+          }
+        }
+
+      }
+
+      .mod_recentcontent_date {
+        font-size: 0.8rem;
+        line-height: 1rem;
+        color: @color-grey;
+        margin-top: 5px;
+      }
+    }
+  }
+}
